@@ -3,8 +3,10 @@ logs
 *.log
 npm-debug.log*
 
-#
-dist
+# Dist firebase
+dist/scripts
+dist/styles
+dist/index.html
 
 # Runtime data
 pids
@@ -41,4 +43,5 @@ jspm_packages
 .idea/
 .vscode
 firebase-debug.log
+*/.DS_Store
 .DS_Store
