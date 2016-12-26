@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { browserHistory, Link } from 'react-router';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { loginUser, fetchUser, loginWithProvider } from '../../actions/firebase_actions';
+import { loginUser, fetchUser, loginWithProvider } from '../../actions/actions';
 
 
 class UserLogin extends Component {
@@ -30,7 +30,7 @@ class UserLogin extends Component {
     event.preventDefault();
 
     var email = this.refs.email.value;
-    var password = this.refs.password.value;
+    var password = 'noPasswordBecauseSecuritySucks' // this.refs.password.value;
     this.props.loginUser({ email: email, password: password }).then(data => {
 
       if (data.payload.errorCode)
@@ -56,14 +56,14 @@ class UserLogin extends Component {
             <input type="email" className="form-control" id="txtEmail" ref="email" placeholder="Enter email"
               name="email"/>
           </div>
-          <div className="form-group">
+          {/* <div className="form-group">
             <label htmlFor="txtPass">Password</label>
             <input type="password" className="form-control" id="txtPass" ref="password" placeholder="Password"
               name="password"/>
-          </div>
+          </div> */}
           <button type="submit" className="btn btn-default btn-block">Login</button>
           <br/>
-          <h5><Link to="/reset">Forgot password?</Link></h5>
+          {/* <h5><Link to="/reset">Forgot password?</Link></h5>
 
           <h4>Login with</h4>
           <a href="#" className="btn btn-block btn-social btn-facebook" onClick={() => {
@@ -80,7 +80,7 @@ class UserLogin extends Component {
 
            <a href="#" className="btn btn-block btn-social btn-github" onClick={() => {
             this.loginWithProvider("github")
-          } } data-provider="twitter">Github</a>
+          } } data-provider="twitter">Github</a> */}
 
         </form>
       </div>

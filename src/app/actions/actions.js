@@ -5,9 +5,14 @@ import {
   LOGIN_FIREBASE_USER,
   FETCH_FIREBASE_USER,
   UPDATE_FIREBASE_USER,
+  UPDATE_RSVP,
+  FETCH_RSVP,
   CHANGE_FIREBASE_USER_PASSWORD,
   FIREBASE_PASSWORD_RESET_EMAIL,
   LOGOUT_FIREBASE_USER,
+  SWITCH_LANG,
+  ANSWER_STORY_QUIZ,
+  RETRY_STORY_QUIZ
 } from './types';
 
 
@@ -43,6 +48,15 @@ export function fetchUser() {
     };
 }
 
+export function fetchRsvp() {
+    const request = FireBaseTools.fetchRsvp();
+    return {
+        type: FETCH_RSVP,
+        payload: request,
+    };
+}
+
+
 export function updateUser(user) {
     const request = FireBaseTools.updateUserProfile(user);
     return {
@@ -50,6 +64,15 @@ export function updateUser(user) {
         payload: request,
     };
 }
+
+export function updateRsvp(data) {
+    FireBaseTools.updateRsvp(data);
+    return {
+        type: UPDATE_RSVP,
+        payload: data,
+    };
+}
+
 
 export function changePassword(newPassword) {
     const request = FireBaseTools.changePassword(newPassword);
@@ -73,4 +96,24 @@ export function logoutUser(user) {
         type: LOGOUT_FIREBASE_USER,
         payload: request,
     };
+}
+
+export function switchLang(lang) {
+    return {
+        type: SWITCH_LANG,
+        payload: lang,
+    };
+}
+
+export function answerStoryQuiz(answer) {
+  return {
+    type: ANSWER_STORY_QUIZ,
+    payload: answer
+  }
+}
+
+export function retryStoryQuiz() {
+  return {
+    type: RETRY_STORY_QUIZ,
+  }
 }

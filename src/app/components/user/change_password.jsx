@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { changePassword } from '../../actions/firebase_actions';
+import { changePassword } from '../../actions/actions';
 
 class ChangePassword extends Component {
 
@@ -39,13 +39,13 @@ class ChangePassword extends Component {
         <div className="form-group">
           <label htmlFor="password"> New Password: </label>
           <input type="password" className="form-control"
-            name="password" ref="password" id="password" 
+            name="password" ref="password" id="password"
           />
         </div>
         <div className="form-group">
           <label htmlFor="repeatPassword"> Repeat Password: </label>
           <input type="password" className="form-control"
-            name="repeatPassword" ref="repeatPassword" id="repeatPassword" 
+            name="repeatPassword" ref="repeatPassword" id="repeatPassword"
           />
 
         </div>

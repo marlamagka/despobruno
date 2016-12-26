@@ -80,6 +80,17 @@ const FireBaseTools = {
         });
     }),
 
+    fetchRsvp: () => new Promise((resolve, reject) => {
+        const unsub = firebaseAuth.onAuthStateChanged((user) => {
+            unsub();
+            FireBaseTools.getDatabaseReference('rsvp/'+user.uid).once('value').then(function(snapshot) {
+              resolve(snapshot.val());
+            });
+        }, (error) => {
+            reject(error);
+        });
+    }),
+
   /**
    * Log the user in using email and password
    *
@@ -99,11 +110,15 @@ const FireBaseTools = {
    * @param u
    * @returns {!firebase.Promise.<*>|firebase.Thenable<any>|firebase.Promise<any>|!firebase.Thenable.<*>}
    */
-    updateUserProfile: u => firebaseAuth.currentUser.updateProfile(u).then(() => firebaseAuth.currentUser, error => ({
+    updateUserProfile: u => {
+      return firebaseAuth.currentUser.updateProfile(u).then(() => firebaseAuth.currentUser, error => ({
         errorCode: error.code,
         errorMessage: error.message,
-    })),
-
+      }))
+    },
+    updateRsvp: u => {
+      return FireBaseTools.getDatabaseReference('rsvp/'+u.uid).set(u)
+    },
   /**
    * Reset the password given the specified email
    *

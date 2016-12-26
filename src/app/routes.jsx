@@ -2,7 +2,9 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 import App from './components/app';
 
-import HomeIndex from './components/index_home';
+import Home from './components/Home';
+import Info from './components/Info';
+import Story from './components/Story';
 import UserLogin from './components/user/login';
 import UserLogout from './components/user/logout';
 import UserRegister from './components/user/register';
@@ -12,7 +14,9 @@ import requireAuth from './utils/authenticated';
 
 export default (
     <Route path="/" component={App}>
-        <IndexRoute component={HomeIndex} />
+        <IndexRoute component={Home} />
+        <Route path="/info" component={Info} />
+        <Route path="/story" component={Story} />
         <Route path="/login" component={UserLogin} />
         <Route path="/logout" component={UserLogout} />
         <Route path="/register" component={UserRegister} />

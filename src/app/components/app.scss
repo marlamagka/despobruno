@@ -53,3 +53,47 @@ body {
   height: 60vw;
   pointer-events: none;
 }
+
+.story-header {
+  font-family: 'Indie Flower', cursive;
+}
+
+.story-step {
+  position: relative;
+  margin-top: 50px;
+  .story-year {
+    position: absolute;
+    left: 0;
+  }
+  .story-avatar {
+    position: absolute;
+    left: 55px;
+    top: -16px;
+    img.avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 6px solid transparent;
+      &.Bruno { border-color: lightgrey}
+      &.Despoina { border-color: lightblue }
+      &.Both { border-color: lightpink}
+    }
+  }
+  .story-content {
+    margin-left: 125px;
+  }
+}
+
+.story-guess {
+  margin-top: 100px;
+  button {
+    margin-top: 5px;
+    margin-right: 10px;
+    border: none;
+  }
+  .more-to-go {
+    margin-top: 30px;
+    font-style: italic;
+    color: grey;
+  }
+}

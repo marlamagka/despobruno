@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { fetchUser, logoutUser } from '../actions/firebase_actions';
+import { fetchUser, fetchRsvp, logoutUser, switchLang } from '../actions/actions';
 
 class App extends Component {
 
@@ -10,6 +10,7 @@ class App extends Component {
     super(props);
 
     this.props.fetchUser();
+    this.props.fetchRsvp();
     this.logOut = this.logOut.bind(this);
   }
 
@@ -17,6 +18,7 @@ class App extends Component {
     this.props.logoutUser().then(data=> {
       // reload props from reducer
       this.props.fetchUser();
+      this.props.fetchRsvp();
     });
   }
 
@@ -37,8 +39,8 @@ class App extends Component {
       )
     else
       return [
-        <li key={1}><Link to="/login">Login</Link></li>,
-        <li key={2}><Link to="/register">Register</Link></li>
+        // <li key={1}><Link to="/login">Login</Link></li>,
+        <li key={2}><Link to="/register">RSVP</Link></li>
       ]
 
   }
@@ -55,13 +57,27 @@ class App extends Component {
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
               </button>
-              <Link to="/" className="navbar-brand">Firebase & Redux boilerplate</Link>
+              {/* <Link to="/" className="navbar-brand">Firebase & Redux boilerplate</Link> */}
 
             </div>
             <nav className="collapse navbar-collapse bs-navbar-collapse" role="navigation">
               <ul className="nav navbar-nav">
-                <li><Link to="/"> Home</Link></li>
-                ,
+                <li><Link to="/"> Home </Link></li>
+                <li><Link to="/info"> Info </Link></li>
+                <li><Link to="/info"> Travel </Link></li>
+                <li><Link to="/info"> Accomodation </Link></li>
+                <li><Link to="/info"> Tourism </Link></li>
+                <li><Link to="/story"> Story </Link></li>
+
+                <li><Link
+                  style={this.props.copy._lang === 'EN' ? {color: 'lightblue'} : {}}
+                  onClick={() => this.props.switchLang('EN')}> EN </Link></li>
+                <li><Link
+                  style={this.props.copy._lang === 'GR' ? {color: 'lightblue'} : {}}
+                  onClick={() => this.props.switchLang('GR')}> GR </Link></li>
+                <li><Link
+                  style={this.props.copy._lang === 'FR' ? {color: 'lightblue'} : {}}
+                  onClick={() => this.props.switchLang('FR')}> FR </Link></li>
               </ul>
               <ul className="nav navbar-nav navbar-right">
                 { this.renderUserMenu(this.props.currentUser) }
@@ -79,12 +95,14 @@ class App extends Component {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ fetchUser, logoutUser }, dispatch);
+  return bindActionCreators({ fetchUser, fetchRsvp, logoutUser, switchLang }, dispatch);
 }
 
-
 function mapStateToProps(state) {
-  return { currentUser: state.currentUser };
+  return {
+    currentUser: state.currentUser,
+    copy: state.copy,
+  };
 }
 
 

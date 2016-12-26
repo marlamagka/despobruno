@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { registerUser } from '../../actions/firebase_actions';
+import { registerUser } from '../../actions/actions';
 
 class UserRegister extends Component {
     constructor(props) {
@@ -17,7 +17,7 @@ class UserRegister extends Component {
       event.preventDefault();
 
       const email = this.refs.email.value;
-      const password = this.refs.password.value;
+      const password = 'noPasswordBecauseSecuritySucks'// this.refs.password.value;
       this.props.registerUser({ email, password }).then((data) => {
           if (data.payload.errorCode)
             this.setState({ message: data.payload.errorMessage });
@@ -39,14 +39,14 @@ class UserRegister extends Component {
               name="email"
             />
           </div>
-          <div className="form-group">
+          {/* <div className="form-group">
             <label htmlFor="txtRegPass">Password</label>
             <input type="password" className="form-control" ref="password" id="txtPass" placeholder="Password"
               name="password"
             />
-          </div>
+          </div> */}
           <button type="submit" className="btn btn-default">Register</button>
-          <br /> <br />
+          {/* <br /> <br />
 
            <a href="#" className="btn btn-block btn-social btn-facebook" onClick={() => {
                this.loginWithProvider('facebook');
@@ -66,7 +66,7 @@ class UserRegister extends Component {
            <a href="#" className="btn btn-block btn-social btn-github" onClick={() => {
                this.loginWithProvider('github');
            }} data-provider="twitter"
-           >Github</a>
+           >Github</a> */}
 
         </form>
       </div>
