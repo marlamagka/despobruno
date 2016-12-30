@@ -5,6 +5,7 @@ import {
   LOGIN_FIREBASE_USER,
   FETCH_FIREBASE_USER,
   UPDATE_FIREBASE_USER,
+  INIT_RSVP,
   UPDATE_RSVP,
   FETCH_RSVP,
   CHANGE_FIREBASE_USER_PASSWORD,
@@ -64,6 +65,13 @@ export function updateUser(user) {
         payload: request,
     };
 }
+
+export function initRsvp() {
+  return {
+    type: INIT_RSVP
+  };
+}
+
 
 export function updateRsvp(data) {
     FireBaseTools.updateRsvp(data);

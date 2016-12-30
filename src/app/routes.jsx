@@ -5,6 +5,7 @@ import App from './components/app';
 import Home from './components/Home';
 import Info from './components/Info';
 import Story from './components/Story';
+import Rsvp from './components/Rsvp';
 import UserLogin from './components/user/login';
 import UserLogout from './components/user/logout';
 import UserRegister from './components/user/register';
@@ -22,6 +23,7 @@ export default (
         <Route path="/register" component={UserRegister} />
         <Route path="/reset" component={ResetPassword} />
         <Route path="/profile" component={UserProfile} onEnter={requireAuth} />
+        <Route path="/rsvp" component={Rsvp}/>
     </Route>
 
 );

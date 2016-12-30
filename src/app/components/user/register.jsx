@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { registerUser } from '../../actions/actions';
+import { registerUser, initRsvp } from '../../actions/actions';
 
 class UserRegister extends Component {
     constructor(props) {
@@ -21,18 +21,21 @@ class UserRegister extends Component {
       this.props.registerUser({ email, password }).then((data) => {
           if (data.payload.errorCode)
             this.setState({ message: data.payload.errorMessage });
-          else
-          browserHistory.push('/profile');
+          else {
+            this.props.initRsvp()
+            browserHistory.push('/profile');
+          }
       }
     );
   }
 
     render() {
-        return (
+      const copy = this.props.copy
+      return (
       <div className="col-md-4">
         <form id="frmRegister" role="form" onSubmit={this.onFormSubmit}>
           <p>{this.state.message}</p>
-          <h2>Register</h2>
+          <h2> {copy.pleaseRsvp} </h2>
           <div className="form-group">
             <label htmlFor="txtRegEmail">Email address</label>
             <input type="email" className="form-control" ref="email" id="txtEmail" placeholder="Enter email"
@@ -78,11 +81,15 @@ class UserRegister extends Component {
 function mapDispatchToProps(dispatch) {
     return bindActionCreators({
         registerUser,
+        initRsvp,
     }, dispatch);
 }
 
 function mapStateToProps(state) {
-    return { currentUser: state.currentUser };
+    return {
+      currentUser: state.currentUser,
+      copy: state.copy,
+    };
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(UserRegister);

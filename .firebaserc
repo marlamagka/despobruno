@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "despobrunotest"
+    "default": "despobrunotest",
+    "staging": "despobrunotest"
   }
 }

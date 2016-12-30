@@ -63,6 +63,7 @@ class App extends Component {
             <nav className="collapse navbar-collapse bs-navbar-collapse" role="navigation">
               <ul className="nav navbar-nav">
                 <li><Link to="/"> Home </Link></li>
+                <li><Link to="/rsvp"> RSVP </Link></li>
                 <li><Link to="/info"> Info </Link></li>
                 <li><Link to="/info"> Travel </Link></li>
                 <li><Link to="/info"> Accomodation </Link></li>
