@@ -1,3 +1,5 @@
+console.log('Starting...')
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -14,12 +16,16 @@ import 'bootstrap-social';
 // for bundling your styles
 import './bundle.scss';
 
+console.log('Imported stuff...')
+
 const createStoreWithMiddleware = applyMiddleware(
   ReduxPromise,
   createLogger()
 )(createStore);
 
 const store = createStoreWithMiddleware(reducers)
+
+console.log('Rendering React')
 
 ReactDOM.render(
     <Provider store={store}>
