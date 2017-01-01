@@ -117,7 +117,8 @@ const FireBaseTools = {
       }))
     },
     updateRsvp: u => {
-      return FireBaseTools.getDatabaseReference('rsvp/'+u.uid).set(u)
+      var key = u.email.replace(/[^a-zA-Z]+/g, '');
+      return FireBaseTools.getDatabaseReference('rsvp/'+key).set(u)
     },
   /**
    * Reset the password given the specified email

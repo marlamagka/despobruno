@@ -10,37 +10,27 @@ class Rsvp extends Component {
           message: '',
       };
       this.onFormSubmit = this.onFormSubmit.bind(this);
-      this.onYes = this.onYes.bind(this);
-      this.onNo = this.onNo.bind(this);
   }
 
   onFormSubmit(event) {
       event.preventDefault();
       const email = this.refs.email.value;
       const displayName = this.refs.displayName.value;
-      const joke = this.refs.joke.value;
+      const coming = this.refs.coming1.checked ? true :
+                    this.refs.coming2.checked  ? false :
+                    null;
+      const adults = this.refs.adults1.checked ? 1 :
+                    this.refs.adults2.checked ? 2 :
+                    null;
+      const children = this.refs.children.value;
       this.props.updateRsvp({
           email,
           displayName,
-      }).then((data) => {
-          if (data.payload.errorCode) {
-              this.setState({ message: data.payload.errorMessage });
-          } else {
-              this.setState({ message: 'Updated successfuly!' });
-          }
+          coming,
+          adults,
+          children,
+          dateSubmitted: new Date().toString(),
       })
-  }
-
-  onYes(e) {
-    this.setState({
-      yes: e.currentTarget.value
-    });
-  }
-
-  onNo(e) {
-    this.setState({
-      no: e.currentTarget.value
-    });
   }
 
   render() {
@@ -72,22 +62,39 @@ class Rsvp extends Component {
                 />
             </div>
             <div className="form-group">
-                <label htmlFor="displayName">Are you coming? </label>
-                <tr>
-                  <td><input
+                <label htmlFor="coming">Are you coming? </label> <br/>
+                <input
                     type="radio"
-                    name="yes"
-                    value="Yes"
-                    checked={true}
-                    onChange={this.onYes}/>Yes</td>
-                  <td><input
+                    name="coming"
+                    ref="coming1"/> Yes<br/>
+                <input
                     type="radio"
-                    name="no"
-                    value="No"
-                    checked={false}
-                    onChange={this.onNo}/>No</td>
-                </tr>
+                    name="coming"
+                    ref="coming2"/> No<br/>
             </div>
+            <div className="form-group">
+                <label htmlFor="adults">Number of adults </label> <br/>
+                <input
+                    type="radio"
+                    name="adults"
+                    ref="adults1"
+                    value={1}/> Just me<br/>
+                <input
+                    type="radio"
+                    name="adults"
+                    ref="adults2"
+                    value={2}/> Bringing a +1<br/>
+            </div>
+            <div className="form-group">
+                <label htmlFor="children">Number of children </label> <br/>
+                <select name="children" ref="children">
+                    <option value={0}> 0</option>
+                    <option value={1}> 1</option>
+                    <option value={2}> 2</option>
+                    <option value={3}> 3</option>
+                </select>
+            </div>
+
             <button type="submit" className="btn btn-primary">Submit</button>
         </form>
     </div>;
