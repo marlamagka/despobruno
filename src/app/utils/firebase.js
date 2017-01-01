@@ -116,10 +116,19 @@ const FireBaseTools = {
         errorMessage: error.message,
       }))
     },
-    updateRsvp: u => {
+    updateRsvp: u => new Promise((resolve) => {
       var key = u.email.replace(/[^a-zA-Z]+/g, '');
-      return FireBaseTools.getDatabaseReference('rsvp/'+key).set(u)
-    },
+      if (typeof key !== 'string' || key.length === 0) {
+        return resolve({
+          message: 'Email required'
+        })
+      }
+      FireBaseTools.getDatabaseReference('rsvp/'+key).set(u, (err) => {
+        resolve({
+          message: err ? err.message : 'Success!'
+        })
+      })
+    }),
   /**
    * Reset the password given the specified email
    *

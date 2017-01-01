@@ -74,10 +74,10 @@ export function initRsvp() {
 
 
 export function updateRsvp(data) {
-    FireBaseTools.updateRsvp(data);
+    const request = FireBaseTools.updateRsvp(data);
     return {
         type: UPDATE_RSVP,
-        payload: data,
+        payload: request,
     };
 }
 

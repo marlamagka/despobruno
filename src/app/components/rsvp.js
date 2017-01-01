@@ -12,6 +12,19 @@ class Rsvp extends Component {
       this.onFormSubmit = this.onFormSubmit.bind(this);
   }
 
+  validateInput(input) {
+    if (input.displayName.length < 3) {
+      return {
+        ok: false,
+        message: 'Need name!'
+      }
+    }
+    return {
+      ok: true,
+      message: ''
+    }
+  }
+
   onFormSubmit(event) {
       event.preventDefault();
       const email = this.refs.email.value;
@@ -23,13 +36,23 @@ class Rsvp extends Component {
                     this.refs.adults2.checked ? 2 :
                     null;
       const children = this.refs.children.value;
-      this.props.updateRsvp({
+      const input = {
           email,
           displayName,
           coming,
           adults,
-          children,
-          dateSubmitted: new Date().toString(),
+          children
+      }
+      const {ok, message} = this.validateInput(input)
+      if (!ok) {
+        this.setState({message})
+        return
+      }
+      this.props.updateRsvp({
+        ...input,
+        dateSubmitted: new Date().toString(),
+      }).then((data) => {
+        this.setState({message: data.payload.message})
       })
   }
 
