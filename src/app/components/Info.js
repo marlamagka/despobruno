@@ -12,12 +12,5 @@ export default () => {
     <div className='wed-place'> Paros, Greece </div>
     <img src={myPic} style={{width: '50vw'}}/>
 
-    {/* <div className="video-background">
-      <div className="video-blur"/>
-      <div className="video-foreground">
-        <iframe src={videoUrl} frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div> */}
-
   </div>;
 };
