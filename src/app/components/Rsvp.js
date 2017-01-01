@@ -2,14 +2,48 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
+const langToForm = {
+  FR: 'JXlpTi',
+  EN: 'IYKQpZ',
+}
+
 class Rsvp extends Component {
   constructor(props) {
     super(props);
   }
 
+  componentDidMount() {
+    const uid = 'typeformScript79123619287'
+    const elem = document.getElementById(uid)
+    if (elem) return
+    var newElem = document.createElement('script');
+    newElem.id = uid;
+    newElem.src = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/widget.js';
+    var firstScript = document.getElementsByTagName('script')[0];
+    firstScript.parentNode.insertBefore(newElem, firstScript)
+  }
+
   render() {
+    const typeformId = langToForm[this.props.copy._lang]
     return <div className="col-md-6">
-      Will embbed typeform here....
+      <div
+        className="typeform-widget"
+        data-url={'https://marlamagka.typeform.com/to/JXlpTi'}
+        data-text="DespoBruno Wedding RSVP (FR)"
+        style={{
+          width: '100%', height: '500px',
+          display: this.props.copy._lang === 'FR' ? true : 'none'
+        }}
+      />
+      <div
+        className="typeform-widget"
+        data-url={'https://marlamagka.typeform.com/to/IYKQpZ'}
+        data-text="DespoBruno Wedding RSVP"
+        style={{
+          width: '100%', height: '500px',
+          display: this.props.copy._lang === 'EN' ? true : 'none'
+        }}
+      />
     </div>;
   }
 };
