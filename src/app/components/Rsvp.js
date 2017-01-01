@@ -5,6 +5,7 @@ import { bindActionCreators } from 'redux';
 const langToForm = {
   FR: 'JXlpTi',
   EN: 'IYKQpZ',
+  GR: 'JXaStL',
 }
 
 class Rsvp extends Component {
@@ -31,24 +32,18 @@ class Rsvp extends Component {
       margin: 0,
       height: '100%',
     }}>
-      <div
-        className="typeform-widget"
-        data-url={'https://marlamagka.typeform.com/to/JXlpTi'}
-        data-text="DespoBruno Wedding RSVP (FR)"
-        style={{
-          width: '100%', height: '80vh',
-          display: this.props.copy._lang === 'FR' ? true : 'none'
-        }}
-      />
-      <div
-        className="typeform-widget"
-        data-url={'https://marlamagka.typeform.com/to/IYKQpZ'}
-        data-text="DespoBruno Wedding RSVP"
-        style={{
-          width: '100%', height: '80vh',
-          display: this.props.copy._lang === 'EN' ? true : 'none'
-        }}
-      />
+     {Object.keys(langToForm).map(lang =>
+       <div
+         key={lang}
+         className="typeform-widget"
+         data-url={'https://marlamagka.typeform.com/to/' + langToForm[lang]}
+         data-text="DespoBruno Wedding RSVP (FR)"
+         style={{
+           width: '100%', height: '80vh',
+           display: this.props.copy._lang === lang ? true : 'none'
+         }}
+       />
+     )}
       <div style={{position: "absolute", background: '#fafafa',
         right: '107px', bottom: 0, width: '200px', height: '56px'}}/>
     </div>;

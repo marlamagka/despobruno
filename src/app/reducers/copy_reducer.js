@@ -13,14 +13,12 @@ function copyInLang(lang) {
 }
 
 var navLang = window.navigator.userLanguage || window.navigator.language
-if (navLang.startsWith('en')) {
-  navLang = 'EN'
-}
 if (navLang === 'el') {
   navLang = 'GR'
-}
-if (navLang === 'fr') {
+} else if (navLang === 'fr') {
   navLang = 'FR'
+} else {
+  navLang = 'EN'
 }
 
 var defaultLang = localStorage._lang || navLang
