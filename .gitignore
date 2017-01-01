@@ -3,11 +3,6 @@ logs
 *.log
 npm-debug.log*
 
-# Dist firebase
-dist/scripts
-dist/styles
-dist/index.html
-
 # Runtime data
 pids
 *.pid
