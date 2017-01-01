@@ -3,4 +3,5 @@ module.exports = require('./webpack.config.js')({
   devtool: 'source-map',
   jsFileName: 'app.[hash].js',
   cssFileName: 'app.[hash].css',
+  publicPath: 'despobruno',
 });
