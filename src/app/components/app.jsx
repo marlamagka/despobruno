@@ -27,7 +27,8 @@ class App extends Component {
               <ul className="nav navbar-nav">
                 <li><Link to="/"> Home </Link></li>
                 <li><Link to="/rsvp"> RSVP </Link></li>
-                <li><Link to="/info"> Info </Link></li>
+                <li><Link to="/travel"> Travel </Link></li>
+                <li><Link to="/venue"> Venue </Link></li>
                 <li><Link to="/story"> Story </Link></li>
 
                 <li><Link
