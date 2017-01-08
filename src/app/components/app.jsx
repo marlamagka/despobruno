@@ -4,6 +4,12 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { switchLang } from '../actions/actions';
 
+const flags = {
+  EN: '../../../images/EN_flag.png',
+  FR: '../../../images/FR_flag.png',
+  GR: '../../../images/GR_flag.png',
+}
+
 class App extends Component {
 
   constructor(props) {
@@ -32,14 +38,32 @@ class App extends Component {
                 <li><Link to="/story"> Story </Link></li>
 
                 <li><Link
-                  style={this.props.copy._lang === 'EN' ? {color: 'lightblue'} : {}}
-                  onClick={() => this.props.switchLang('EN')}> EN </Link></li>
+                  onClick={() => this.props.switchLang('EN')}>
+                   <img
+                     style={this.props.copy._lang === 'EN' ? {
+                       boxShadow: '0px 0px 14px white',
+                       borderRadius: '50%',
+                     } : {}}
+                    src={flags['EN']} width="30px"/>
+                  </Link></li>
                 <li><Link
-                  style={this.props.copy._lang === 'GR' ? {color: 'lightblue'} : {}}
-                  onClick={() => this.props.switchLang('GR')}> GR </Link></li>
+                  onClick={() => this.props.switchLang('GR')}>
+                    <img
+                      style={this.props.copy._lang === 'GR' ? {
+                        boxShadow: '0px 0px 14px white',
+                        borderRadius: '50%',
+                      } : {}}
+                      src={flags['GR']} width="30px"/>
+                   </Link></li>
                 <li><Link
-                  style={this.props.copy._lang === 'FR' ? {color: 'lightblue'} : {}}
-                  onClick={() => this.props.switchLang('FR')}> FR </Link></li>
+                  onClick={() => this.props.switchLang('FR')}>
+                    <img
+                      style={this.props.copy._lang === 'FR' ? {
+                        boxShadow: '0px 0px 14px white',
+                        borderRadius: '50%',
+                      } : {}}
+                      src={flags['FR']} width="30px"/>
+                  </Link></li>
               </ul>
             </nav>
           </div>
