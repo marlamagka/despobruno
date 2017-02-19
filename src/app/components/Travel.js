@@ -1,6 +1,6 @@
 import React from 'react';
 
-const parosSelfie = '../../../images/paros.jpg';
+const parosSelfie = '../../../images/paros_pic.jpg';
 
 export default () => <div>
   <h1>How do I get to Paros?</h1>

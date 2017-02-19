@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { answerStoryQuiz, retryStoryQuiz } from '../actions/actions';
 
-const myPic = '../../../images/paros.jpg';
+const myPic = '../../../images/paros_pic.jpg';
 
 const storyData = [{
   question: 'Guess who was born in 1983?',
