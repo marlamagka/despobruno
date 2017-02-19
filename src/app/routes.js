@@ -9,12 +9,11 @@ import Story from './components/Story';
 import Rsvp from './components/Rsvp';
 
 export default (
-    <Route path="/" component={App}>
-        <IndexRoute component={Home} />
-        <Route path="/travel" component={Travel} />
-        <Route path="/venue" component={Venue} />
-        <Route path="/story" component={Story} />
-        <Route path="/rsvp" component={Rsvp}/>
-    </Route>
-
+  <Route path="/" component={App}>
+    <IndexRoute component={Home} />
+    <Route path="/travel" component={Travel} />
+    <Route path="/venue" component={Venue} />
+    <Route path="/story" component={Story} />
+    <Route path="/rsvp" component={Rsvp} />
+  </Route>
 );

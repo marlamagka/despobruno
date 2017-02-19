@@ -6,7 +6,7 @@ const langToForm = {
   FR: 'JXlpTi',
   EN: 'IYKQpZ',
   GR: 'JXaStL',
-}
+};
 
 class Rsvp extends Component {
   constructor(props) {
@@ -25,24 +25,27 @@ class Rsvp extends Component {
   // }
   //
   render() {
-    const formId = langToForm[this.props.copy._lang]
-    return <div>
-      Thanks for confirming your presence by filling in the form below: <br/>
+    const formId = langToForm[this.props.copy._lang];
+    return (<div>
+      Thanks for confirming your presence by filling in the form below: <br />
       <a href={`https://marlamagka.typeform.com/to/${formId}`}
         target="_blank"
+        rel="noopener noreferrer"
         style={{
-        color: 'white',
-        display: 'inline-block',
-        margin: '20px',
-        padding: '10px',
-        background: 'blue',
-        fontSize: '200%'
-      }}> RSVP </a> <br/>
-      If have already filled in this form but changed you mind (e.g. on number of guests/kids), <br/> please <a href="mailto:despo-and-bruno@googlegroups.com">
+          color: 'white',
+          display: 'inline-block',
+          margin: '20px',
+          padding: '10px',
+          background: 'blue',
+          fontSize: '200%',
+        }}
+      > RSVP </a> <br />
+      If have already filled in this form but changed you mind
+      (e.g. on number of guests/kids), <br />
+      please <a href="mailto:despo-and-bruno@googlegroups.com">
       email us
       </a>!
-
-    </div>
+    </div>);
     // return <div className="col-md-6" style={{
     //   background: '#fafafa',
     //   padding: 0,
@@ -65,7 +68,7 @@ class Rsvp extends Component {
     //     right: '107px', bottom: 0, width: '200px', height: '56px'}}/>
     // </div>;
   }
-};
+}
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({}, dispatch);

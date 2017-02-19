@@ -2,29 +2,13 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-const videoUrl = "https://www.youtube.com/embed/WwSYT-4KwpI?controls=0&showinfo=0&rel=0&autoplay=1&loop=1"
-
+// const videoUrl = "https://www.youtube.com/embed/WwSYT-4KwpI?controls=0&showinfo=0&rel=0&autoplay=1&loop=1"
 
 class Home extends Component {
 
-  render() {
-    return <div>
-      <div className='our-names'> Despo & Bruno </div>
-      <div className='wed-date'> June 10, 2016 </div>
-      <div className='wed-place'> Paros, Greece </div>
-      {/* <div> {this.props.copy.welcome} </div> */}
-      <div className="video-background">
-        <div className="video-blur"/>
-        <div className="video-foreground">
-          {/* <iframe src={videoUrl} id="videoElem" frameborder="0" allowfullscreen></iframe> */}
-          <div id="muteYouTubeVideoPlayer"></div>
-        </div>
-      </div>
-    </div>;
-  }
-
   componentDidMount() {
-    const YT = window.YT
+    /* global window */
+    const YT = window.YT;
     new YT.Player('muteYouTubeVideoPlayer', {
       videoId: 'WwSYT-4KwpI',   // YouTube Video ID
       width: 560,               // Player width (in px)
@@ -41,15 +25,30 @@ class Home extends Component {
         autohide: 0,            // Hide video controls when playing
       },
       events: {
-        onReady: function (e) {
+        onReady(e) {
           e.target.mute();
         },
       },
     });
   }
+
+  render() {
+    return (<div>
+      <div className="our-names"> Despo & Bruno </div>
+      <div className="wed-date"> June 10, 2016 </div>
+      <div className="wed-place"> Paros, Greece </div>
+      {/* <div> {this.props.copy.welcome} </div> */}
+      <div className="video-background">
+        <div className="video-blur" />
+        <div className="video-foreground">
+          {/* <iframe src={videoUrl} id="videoElem" frameborder="0" allowfullscreen></iframe> */}
+          <div id="muteYouTubeVideoPlayer" />
+        </div>
+      </div>
+    </div>);
+  }
+
 }
-
-
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({}, dispatch);
