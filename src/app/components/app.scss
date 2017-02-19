@@ -1,16 +1,38 @@
 body {
-  font-size: 16px;
-  background: #102175;
-  color: lightblue;
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  background: #55A4CF;
+  color: #DEF2FD;
 }
 
+a, a:hover {
+  color: #FFBFAD;
+}
+
+
 .our-names {
-  color: white;
+  // color: white;
+  color: #FFBFAD;
   font-family: 'Indie Flower', cursive;
   text-align: center;
   width: 100%;
   font-size: 40px;
   margin-bottom: 3px;
+}
+
+.rsvp-button {
+  color: white;
+  display: inline-block;
+  // font-family: 'Indie Flower', cursive;
+  margin: 20px;
+  padding: 10px;
+  background: #FFA084;
+  height: 50px;
+  line-height: 35px;
+  font-size: 20px;
+  min-width: 200px;
+  text-align: center;
+  text-decoration: none !important;
 }
 
 .wed-date {
@@ -40,7 +62,7 @@ body {
 .video-blur {
   width: 100vw;
   height: 60vw;
-  background:rgba(3,23,123,0.6);
+  background: rgba(#3587B3, 0.6); // rgba(3,23,123,0.6);
   padding:30px 0px;
   position: absolute;
   z-index: 1;
@@ -57,7 +79,13 @@ body {
   border: none;
 }
 
-.story-header {
+.story-header, .rsvp-header, .h1-header {
+  font-size: 35px;
+  font-weight: bold;
+  // text-shadow: 0px 0px 1px white;
+  // color: #FFA084;
+  color: #FFBFAD;
+  // text-transform: capitalize;
   font-family: 'Indie Flower', cursive;
 }
 
@@ -102,7 +130,9 @@ body {
 }
 
 .navbar {
-  background: rgb(2, 14, 74)
+  // background: #FF8561;
+  // background: #FFCB41;
+  background: #3587B3;
 }
 
 .shadow-on-hover:hover {
@@ -140,10 +170,14 @@ body {
     text-align: center;
   }
 
+  .navbar-inverse {
+    border: none;
+  }
+
   .navbar-inverse .navbar-nav>li>a {
     color: lightblue;
     padding-top: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
   }
 
   // .navbar-inverse .navbar-nav>li>a:hover {
@@ -154,5 +188,11 @@ body {
 }
 
 .navbar-inverse .navbar-nav>li>a {
-  color: lightblue;
+  color: #DEF2FD;
+  text-shadow: none;
+  font-size: 19px;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover,  {
+  color: white;
 }

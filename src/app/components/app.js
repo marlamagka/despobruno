@@ -17,6 +17,7 @@ class App extends Component {
   }
 
   render() {
+    const copy = this.props.copy
     return (
       <div>
         <header className="navbar navbar-static-top navbar-inverse" id="top" role="banner">
@@ -32,11 +33,11 @@ class App extends Component {
             </div>
             <nav className="collapse navbar-collapse bs-navbar-collapse" role="navigation">
               <ul className="nav navbar-nav">
-                <li><Link to="/"> Home </Link></li>
-                <li><Link to="/rsvp"> RSVP </Link></li>
-                <li><Link to="/travel"> Travel </Link></li>
-                <li><Link to="/venue"> Venue </Link></li>
-                <li><Link to="/story"> Story </Link></li>
+                <li><Link to="/"> {copy.home} </Link></li>
+                <li><Link to="/rsvp"> {copy.rsvp} </Link></li>
+                <li><Link to="/travel"> {copy.travel} </Link></li>
+                <li><Link to="/venue"> {copy.venue} </Link></li>
+                <li><Link to="/story"> {copy.story} </Link></li>
                 <li className="lang1"><Link
                   onClick={() => this.props.switchLang('EN')}
                 >

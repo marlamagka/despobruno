@@ -17,6 +17,7 @@
     "react/jsx-indent-props": ["warn", 2],
     "react/prop-types": ["off"],
     "react/sort-comp": ["off"],
+    "react/no-danger": ["off"],
     "react/jsx-filename-extension": ["off"],
     "react/jsx-closing-brackets-location": ["off"],
     "jsx-a11y/img-has-alt": ["off"],

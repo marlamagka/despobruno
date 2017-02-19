@@ -37,10 +37,11 @@ class Home extends Component {
   }
 
   render() {
+    const {copy} = this.props;
     return (<div>
       <div className="our-names"> Despo & Bruno </div>
-      <div className="wed-date"> June 10, 2016 </div>
-      <div className="wed-place"> Paros, Greece </div>
+      <div className="wed-date"> {copy.date} </div>
+      <div className="wed-place"> {copy.location} </div>
       {/* <div> {this.props.copy.welcome} </div> */}
       <div className="video-background">
         <div className="video-blur" />
