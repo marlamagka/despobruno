@@ -5,9 +5,9 @@ import { bindActionCreators } from 'redux';
 import { switchLang } from '../actions/actions';
 
 const flags = {
-  EN: '../../../images/EN_flag.png',
-  FR: '../../../images/FR_flag.png',
-  GR: '../../../images/GR_flag.png',
+  EN: '../../../images/EN_flag_square.png',
+  FR: '../../../images/FR_flag_square.png',
+  GR: '../../../images/GR_flag_square.png',
 };
 
 class App extends Component {
@@ -37,38 +37,40 @@ class App extends Component {
                 <li><Link to="/travel"> Travel </Link></li>
                 <li><Link to="/venue"> Venue </Link></li>
                 <li><Link to="/story"> Story </Link></li>
-
-                <li><Link
+                <li className="lang1"><Link
                   onClick={() => this.props.switchLang('EN')}
                 >
                   <img
+                    className="shadow-on-hover"
                     style={this.props.copy._lang === 'EN' ? {
-                      boxShadow: '0px 0px 14px white',
-                      borderRadius: '50%',
-                    } : {}}
-                    src={flags.EN} width="30px"
+                      // boxShadow: '0px 0px 14px white',
+                      // borderRadius: '50%',
+                    } : { opacity: 0.6, filter: 'grayscale(100%)' }}
+                    src={flags.EN} width="25px"
                   />
                 </Link></li>
-                <li><Link
+                <li className="lang2"><Link
                   onClick={() => this.props.switchLang('GR')}
                 >
                   <img
+                    className="shadow-on-hover"
                     style={this.props.copy._lang === 'GR' ? {
-                      boxShadow: '0px 0px 14px white',
-                      borderRadius: '50%',
-                    } : {}}
-                    src={flags.GR} width="30px"
+                      // boxShadow: '0px 0px 14px white',
+                      // borderRadius: '50%',
+                    } : { opacity: 0.6, filter: 'grayscale(100%)' }}
+                    src={flags.GR} width="25px"
                   />
                 </Link></li>
-                <li><Link
+                <li className="lang3"><Link
                   onClick={() => this.props.switchLang('FR')}
                 >
                   <img
+                    className="shadow-on-hover"
                     style={this.props.copy._lang === 'FR' ? {
-                      boxShadow: '0px 0px 14px white',
-                      borderRadius: '50%',
-                    } : {}}
-                    src={flags.FR} width="30px"
+                      // boxShadow: '0px 0px 14px white',
+                      // borderRadius: '50%',
+                    } : { opacity: 0.6, filter: 'grayscale(100%)' }}
+                    src={flags.FR} width="25px"
                   />
                 </Link></li>
               </ul>
