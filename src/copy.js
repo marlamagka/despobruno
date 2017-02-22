@@ -46,7 +46,7 @@ export default {
     FR: 'Sur Place',
   },
   story: {
-    EN: 'Story',
+    EN: 'Quiz',
     FR: 'Notre histoire',
   },
   travelInstructions: {
