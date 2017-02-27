@@ -28,7 +28,7 @@ class Rsvp extends Component {
       > RSVP </a> <br />
       {copy.belowRsvp}
       {' '} <a href="mailto:despo-and-bruno@googlegroups.com">
-        {copy.belowRsvpEmailUs}
+        {copy.belowRsvpEmailUs} (despo-and-bruno@googlegroups.com)
       </a>
       !
       <br />

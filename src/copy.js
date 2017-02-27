@@ -42,8 +42,20 @@ export default {
     FR: 'Transports',
   },
   venue: {
-    EN: 'Venue',
+    EN: 'Wedding Day',
     FR: 'Sur Place',
+  },
+  clothes: {
+    EN: 'There is no particular dress code. However, expect June to be hot in the evening and colder during the night, so make sure to bring a cardigan or jacket. For those with lack of inspiration, google for \'beach wedding dress code\'.',
+    FR: 'Il fera du froid pendant la nuit!',
+  },
+  ceremony: {
+    EN: 'The ceremony will take place at 5:30pm outdoors in the yard of Agios Ioannis Detis, a small church by the sea.',
+    FR: 'Voilà l\'église',
+  },
+  reception: {
+    EN: 'The reception will be held in the restaurant next to Monastiri beach, which is 5 mins walk from the church.',
+    FR: 'Voilà la bouffe',
   },
   story: {
     EN: 'Quiz',
@@ -51,7 +63,7 @@ export default {
   },
   travelInstructions: {
     EN: `
-      From <strong>London</strong>, there are three main options:
+      From Western Europe, there are four main options:
       <br />
       <br />
       <ol>
@@ -69,9 +81,16 @@ export default {
           </a>
         </li>
         <li>Fly to Mykonos and then ferry to Paros. There are direct flights to
-          Mykonos from London and Paros is 1 hour away from Mykonos by boat.
+          Mykonos and Paros is 1 hour away by boat.
           Boats are leaving from Mykonos to Paros 5 times per day and
-          you can book
+          you can book at
+          <a href="https://www.seajets.gr/en/Schedule-824.htm">Seajets</a> or
+          <a href="https://hellenicseaways.gr/en/booking">Hellenic Seaways</a>.
+        </li>
+        <li>Fly to Santorini and then ferry to Paros. There are direct flights to
+          Santorini and Paros is 2-4 hours away by boat.
+          Boats are leaving from Santorini to Paros 2 times per day and
+          you can book at
           <a href="https://www.seajets.gr/en/Schedule-824.htm">Seajets</a> or
           <a href="https://hellenicseaways.gr/en/booking">Hellenic Seaways</a>.
         </li>
