@@ -148,6 +148,10 @@ a, a:hover {
 
 
 @media (min-width: 768px) {
+  .not-too-wide {
+    margin: auto;
+    max-width: 70vw;
+  }
   .navbar-nav {
       margin: auto;
   }

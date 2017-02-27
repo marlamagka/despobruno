@@ -18,7 +18,7 @@ class Rsvp extends Component {
   render() {
     const formId = langToForm[this.props.copy._lang];
     const copy = this.props.copy;
-    return (<div style={{ textAlign: 'center' }} className="container">
+    return (<div style={{ textAlign: 'center' }} className="container not-too-wide">
       <h1 className="rsvp-header"> {copy.rsvpHeader} </h1>
       {copy.pleaseRsvp} <br />
       <a href={`https://marlamagka.typeform.com/to/${formId}`}
@@ -27,10 +27,10 @@ class Rsvp extends Component {
         className="rsvp-button"
       > RSVP </a> <br />
       {copy.belowRsvp}
-      {' '} <a href="mailto:despo-and-bruno@googlegroups.com">
-        {copy.belowRsvpEmailUs} (despo-and-bruno@googlegroups.com)
+      {' ' + copy.belowRsvpEmailUs}: <br/>
+      <a href="mailto:despo-and-bruno@googlegroups.com">
+         despo-and-bruno@googlegroups.com
       </a>
-      !
       <br />
       <img src={skyeSelfie} style={{
         width: '40vw',

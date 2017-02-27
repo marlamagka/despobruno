@@ -22,8 +22,8 @@ export default {
     GR: 'Παρακάλω απαντήστε εάν θα έρθετε',
   },
   belowRsvp: {
-    EN: 'If have already filled in this form but changed you mind (e.g. on number of guests/kids), please',
-    FR: "Si vous avex déja rempli le questionaire et avez changé d'avis (e.g. on number of guests/kids), merci de",
+    EN: 'If you have already filled in this form but changed you mind, please',
+    FR: "Si vous avex déja rempli le questionaire et avez changé d'avis, merci de",
   },
   belowRsvpEmailUs: {
     EN: 'email us',
@@ -42,8 +42,8 @@ export default {
     FR: 'Transports',
   },
   venue: {
-    EN: 'Wedding Day',
-    FR: 'Sur Place',
+    EN: 'Wedding',
+    FR: 'Mariage',
   },
   attractions: {
     EN: 'Attractions',
@@ -62,7 +62,7 @@ export default {
     FR: 'Voilà la bouffe',
   },
   parostop: {
-    EN: 'The  old port of Naoussa is a picturesque harbour that makes for a nice stroll. Parikia is the other big village of Paros with a charming old town. You can visit Panagia Ekatontapiliani in Parikia, which is a traditional beautiful church and one of the oldest and biggest in Greece. ',
+    EN: 'Paros is a Greek island in the central Aegean Sea, known in ancient times for its fine white marble. The  old port of Naoussa is a picturesque harbour that makes for a nice stroll. Parikia is the other big village of Paros with a charming old town. You can visit Panagia Ekatontapiliani in Parikia, which is a traditional beautiful church and one of the oldest and biggest in Greece. ',
     FR: 'C\'est belle comme île.',
   },
   parosbottom: {

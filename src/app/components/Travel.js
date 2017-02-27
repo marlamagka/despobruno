@@ -10,7 +10,7 @@ class Travel extends Component {
     super(props);
   }
   render() {
-    return (<div style={{ textAlign: 'center' }}>
+    return (<div style={{ textAlign: 'center' }} className="not-too-wide">
       <h1 className="h1-header">How do I get to Paros?</h1>
       <div
         dangerouslySetInnerHTML={{__html: this.props.copy.travelInstructions}}

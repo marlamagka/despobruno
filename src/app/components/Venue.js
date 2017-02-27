@@ -10,7 +10,7 @@ class Venue extends Component {
   }
   render() {
     const copy = this.props.copy;
-    return (<div style={{ textAlign: 'center' }}>
+    return (<div style={{ textAlign: 'center' }} className="not-too-wide">
     <h1 className="h1-header">Ceremony and Reception</h1>
     {copy.ceremony} <br/>
       <iframe
@@ -24,6 +24,7 @@ class Venue extends Component {
         style={{
           border: 0,
           marginTop: '20px',
+          marginBottom: '20px',
         }}
         allowFullScreen
       />
@@ -41,15 +42,17 @@ class Venue extends Component {
         style={{
           border: 0,
           marginTop: '20px',
+          marginBottom: '20px',
         }}
         allowfullscreen
        />
-    <br/>   
+    <br/>
     {copy.clothes} <br/>
     <br/>
       <img src={oxfordSelfie} style={{
         width: '40vw',
         marginTop: '20px',
+        marginBottom: '20px',
       }} />
     </div>);
   }
