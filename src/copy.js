@@ -45,6 +45,10 @@ export default {
     EN: 'Wedding Day',
     FR: 'Sur Place',
   },
+  attractions: {
+    EN: 'Attractions',
+    FR: 'Activités',
+  },
   clothes: {
     EN: 'There is no particular dress code. However, expect June to be hot in the evening and colder during the night, so make sure to bring a cardigan or jacket. For those with lack of inspiration, google for \'beach wedding dress code\'.',
     FR: 'Il fera du froid pendant la nuit!',
@@ -56,6 +60,22 @@ export default {
   reception: {
     EN: 'The reception will be held in the restaurant next to Monastiri beach, which is 5 mins walk from the church.',
     FR: 'Voilà la bouffe',
+  },
+  parostop: {
+    EN: 'The  old port of Naoussa is a picturesque harbour that makes for a nice stroll. Parikia is the other big village of Paros with a charming old town. You can visit Panagia Ekatontapiliani in Parikia, which is a traditional beautiful church and one of the oldest and biggest in Greece. ',
+    FR: 'C\'est belle comme île.',
+  },
+  parosbottom: {
+    EN: 'There are plenty of beaches in the island. We recommend Kolymbithres Beach that has crystal clear waters and sunbeds and umbrellas; Lageri beach is a more serene and remote option with (mostly) naked swimmers and no beach bars. We will be organising a day at the beach on Sunday after the wedding.',
+    FR: 'C\'est belle comme île.',
+  },
+  naxos: {
+    EN: 'Paros is only half an hour by boat from Naxos, the largest of the Cyclades islands. Naxos port is close to Portara, the Apollo Temple\'s entrance which is a great spot to watch the sunset.',
+    FR: 'C\'est belle comme île.',
+  },
+  antiparos: {
+    EN: 'Antiparos is a small island less than a mile away from Paros with a historical cavern and many sandy beaches.',
+    FR: 'C\'est belle comme île.',
   },
   story: {
     EN: 'Quiz',
