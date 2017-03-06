@@ -41,6 +41,10 @@ export default {
     EN: 'Travel',
     FR: 'Transports',
   },
+  hotels: {
+    EN: 'Hotels',
+    FR: 'Hôtels',
+  },
   venue: {
     EN: 'Wedding',
     FR: 'Mariage',
@@ -115,6 +119,51 @@ export default {
           <a href="https://hellenicseaways.gr/en/booking">Hellenic Seaways</a>.
         </li>
       </ol>
+    `,
+    FR: 'Debrouillez vous...',
+  },
+  hotelInstructions: {
+    EN: `
+      We have arranged some deals with four hotels located in Naoussa and at
+      walking distance from each other. The first two are Madaky and Zoumis
+      right by the old port, with many nice restaurants and shops nearby; the
+      other two are Villa Irini and Kosmitis, slightly closer the beach. You can
+      contact us for prices and book with them directly (mentioning
+      that you are a guest of Despoina Magka’s wedding).
+      <br />
+      <br />
+      <ol>
+        <li>Madaky Hotel, find here their
+          <a href="http://www.madaki.gr/hotel/gr/contact.phps">
+          website </a> and their <a href="http://www.booking.com/hotel/gr/madaky.en-gb.html">
+          booking.com page </a>. For bookings please call +30 22840 51475 or
+          email info@madaki.gr
+        </li>
+        <li>Zoumis Studios, find here their
+          <a href="http://www.zoumisstudios.com/">
+          website </a> and their <a href="http://www.booking.com/hotel/gr/zoumis-paros.en-gb.html">
+          booking.com page </a>. For bookings please call +30 69472 32665 or
+          email info@zoumisstudios.com.
+        </li>
+        <li>Villa Irini, find here their
+          <a href="http://villairini.com/pages/en/contact.php">
+          website </a> and their <a href="http://www.booking.com/hotel/gr/villa-irine.en-gb.html">
+          booking.com page </a>. For bookings please call +30 22840 51900 or
+          email info@villairini.com
+        </li>
+        <li>Kosmitis, find here their
+          <a href="https://www.paroshotel.com/paros-hotel.html">
+          website </a> and their <a href="http://www.booking.com/hotel/gr/kosmitis.en-gb.html">
+          booking.com page </a>. For bookings please call +30 22840 52466 or
+          email kosmitis@par.forthnet.gr
+        </li>
+      </ol>
+      If there is no more availability in the hotels above, or if you have
+      specific needs (e.g. room for 4 people) don't hesitate to ask us directly,
+      or have a browse on booking.com for other options. Note that we will be
+      organising transport from Naoussa to the wedding reception in Monastiri.
+      So we recommend sticking to the Naoussa area even if you decide to
+      book a different hotel.
     `,
     FR: 'Debrouillez vous...',
   },

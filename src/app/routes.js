@@ -4,6 +4,7 @@ import App from './components/app';
 
 import Home from './components/Home';
 import Travel from './components/Travel';
+import Hotels from './components/Hotels';
 import Venue from './components/Venue';
 import Attractions from './components/Attractions';
 import Story from './components/Story';
@@ -13,6 +14,7 @@ export default (
   <Route path="/" component={App}>
     <IndexRoute component={Home} />
     <Route path="/travel" component={Travel} />
+    <Route path="/hotels" component={Hotels} />
     <Route path="/venue" component={Venue} />
     <Route path="/attractions" component={Attractions} />
     <Route path="/story" component={Story} />

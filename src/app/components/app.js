@@ -36,6 +36,7 @@ class App extends Component {
                 <li><Link to="/"> {copy.home} </Link></li>
                 <li><Link to="/rsvp"> {copy.rsvp} </Link></li>
                 <li><Link to="/travel"> {copy.travel} </Link></li>
+                <li><Link to="/hotels"> {copy.hotels} </Link></li>
                 <li><Link to="/venue"> {copy.venue} </Link></li>
                 <li><Link to="/attractions"> {copy.attractions} </Link></li>
                 <li><Link to="/story"> {copy.story} </Link></li>
