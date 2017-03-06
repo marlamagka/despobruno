@@ -26,8 +26,7 @@ class Rsvp extends Component {
         rel="noopener noreferrer"
         className="rsvp-button"
       > RSVP </a> <br />
-      {copy.belowRsvp}
-      {' ' + copy.belowRsvpEmailUs}: <br/>
+      {copy.belowRsvp} <br/>
       <a href="mailto:despo-and-bruno@googlegroups.com">
          despo-and-bruno@googlegroups.com
       </a>

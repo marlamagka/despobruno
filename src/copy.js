@@ -7,14 +7,17 @@ export default {
   date: {
     EN: 'June 10, 2017',
     FR: '10 Juin, 2017',
+    GR: '10 Ιουνιου 2017',
   },
   location: {
     EN: 'Paros, Greece',
     FR: 'Paros, Grèce',
+    FR: 'Πάρος, Κυκλάδες',
   },
   rsvpHeader: {
     EN: 'We\' love to have you with us!',
     FR: 'On vous attend de pied ferme!',
+    FR: 'Θα είναι ιδιαίτερη χαρά μας να σας έχουμε μαζί μας!',
   },
   pleaseRsvp: {
     EN: 'Thanks for confirming your presence by filling in the form below:',
@@ -22,78 +25,142 @@ export default {
     GR: 'Παρακάλω απαντήστε εάν θα έρθετε',
   },
   belowRsvp: {
-    EN: 'If you have already filled in this form but changed you mind, please',
-    FR: "Si vous avex déja rempli le questionaire et avez changé d'avis, merci de",
-  },
-  belowRsvpEmailUs: {
-    EN: 'email us',
-    FR: 'nous ecrire',
+    EN: 'If you have already filled in this form but changed you mind, please email us:',
+    FR: 'Si vous avex déja rempli le questionaire et avez changé d\'avis, merci de nous ecrire:',
+    GR: 'Εάν έχετε ήδη απαντήσει κι έχετε αλλάξει γνώμη, στείλτε μας email στο:',
   },
   home: {
     EN: 'Home',
     FR: 'Accueil',
+    GR: 'Αρχική',
   },
   rsvp: {
     EN: 'RSVP',
     FR: 'Votre Présence',
+    GR: 'RSVP',
   },
   travel: {
     EN: 'Travel',
     FR: 'Transports',
+    GR: 'Ταξίδι',
   },
   hotels: {
     EN: 'Hotels',
     FR: 'Hôtels',
+    GR: 'Ξενοδοχεία',
   },
   venue: {
     EN: 'Wedding',
     FR: 'Mariage',
+    GR: 'Γάμος',
   },
   gifts: {
     EN: 'Gifts',
     FR: 'Cadeaux',
+    GR: 'Δώρα',
   },
   giftInstructions: {
-    EN: 'Your presence at the wedding in this remote destination is the most ' +
+    EN: 'Your presence at our wedding in this remote destination is the most ' +
     'generous of gifts, so there is no need for more! However, if you wish to, '+
     'we will be grateful to accept contributions for our honeymoon at ',
-    FR: 'Cadeaux',
+    FR: 'Votre présence dans notre mariage tellement lointain est très généreuse ' +
+    'comme cadeau, alor ça suffit! Neanmoins, si vous souhaitez, nous serons '+
+    'reconnaissants d´accepter contributions sûr notre voyage de noces à ',
+    GR: 'Η παρουσία σας στο γάμο σε ένα τόσο μακρινό προορισμό είναι το πιο πολύτιμο ' +
+    'δώρο που μπορείτε να μας κάνετε! Ωστόσο, εάν επιθυμείτε να συνεισφέρετε περαιτέρω '+
+    'θα είμαστε ευγνώμονες να δεχτούμε χρηματική βοήθεια για το μήνα του μέλιτος στο ',
   },
   attractions: {
     EN: 'Attractions',
     FR: 'Activités',
+    GR: 'Τουρισμός',
   },
   clothes: {
-    EN: 'There is no particular dress code. However, expect June to be hot in the evening and colder during the night, so make sure to bring a cardigan or jacket. For those with lack of inspiration, google for \'beach wedding dress code\'.',
-    FR: 'Il fera du froid pendant la nuit!',
+    EN: 'There is no particular dress code. However, expect June to be hot in ' +
+    'the evening and colder during the night, so make sure to bring a cardigan ' +
+    'or jacket. For those with lack of inspiration, google for \'beach wedding ' +
+    'dress code\'.',
+    FR: 'Il n\'y a aucun code vestimentaire. Cependant, Juin sera assez chaud ' +
+    'pendand le soir et plus froid pendant la nuit, alors assurez-vous d\' ' +
+    'apporter un cardigan ou une veste. Si vous manquez d\'inspiration, googlez ' +
+    'pour \'beach wedding dress code\'.',
+    GR: 'Δεν υπάρχει κανένας ενδυματολογικός κώδικας. Είναι πιθανό ότι θα κάνει ' +
+    'ζέστη κατά τη διάρκεια της ημέρας και κρύο τη νύχτα, επομένων σιγουρευτείτε ' +
+    'να φέρετε μια ζακέτα ή ένα σακάκι. Για περαιτέρω ιδέες γκουκλάρετε ' +
+    '\'beach wedding dress code\'.',
   },
   ceremony: {
-    EN: 'The ceremony will take place at 5:30pm outdoors in the yard of Agios Ioannis Detis, a small church by the sea.',
-    FR: 'Voilà l\'église',
+    EN: 'The ceremony will take place at 5:30pm outdoors in the yard of Agios ' +
+    'Ioannis Detis, a small church by the sea.',
+    FR: 'La cérémonie aura lieu à 17h30 dehors sûr la cour de St.John ' +
+    'Detis, une petite église près de la mer.',
+    GR: 'Η τελετή θα λάβει μέρος στις 5:30 το απόγευμα στην αυλή του Άγιου Ιωάννη' +
+    'Δέτη δίπλα στη θάλασσα.',
   },
   reception: {
-    EN: 'The reception will be held in the restaurant next to Monastiri beach, which is 5 mins walk from the church.',
-    FR: 'Voilà la bouffe',
+    EN: 'The reception will be held in the stonebuilt venue by Monastiri beach, ' +
+    'which is 5 mins walk from the church.',
+    FR: 'La fête se déroulera dans le lieu pierreux près de la plage Monastiri ' +
+    'à 5 minutes à pied de l\'église.',
+    GR: 'Η δεξίωση θα πραγματοποιηθεί στο πετρόχτιστο κέντρο δίπλα στην παραλία ' +
+    'Μοναστήρι, 5 λεπτά απόσταση με τα πόδια από την εκκλησία.',
   },
   parostop: {
-    EN: 'Paros is a Greek island in the central Aegean Sea, known in ancient times for its fine white marble. The  old port of Naoussa is a picturesque harbour that makes for a nice stroll. Parikia is the other big village of Paros with a charming old town. You can visit Panagia Ekatontapiliani in Parikia, which is a traditional beautiful church and one of the oldest and biggest in Greece. ',
-    FR: 'C\'est belle comme île.',
+    EN: 'Paros is a Greek island in the central Aegean Sea, known in ancient ' +
+    'times for its fine white marble. The  old port of Naoussa is a picturesque ' +
+    'harbour that makes for a nice stroll. Parikia is the other big village of ' +
+    'Paros with a charming old town. You can visit Panagia Ekatontapiliani in ' +
+    'Parikia, which is a traditional beautiful church and one of the oldest and ' +
+    'biggest in Greece. ',
+    FR: 'Paros est une île grecque dans la mer Égée centrale, connu dans les ' +
+    'temps anciens pour son beau marbre blanc. Le vieux port de Naoussa est ' +
+    'un havre pittoresque qui fait une agréable promenade. Parikia est l\'autre ' +
+    ' grand village de Paros avec une charmante vieille ville. Vous pouvez visiter ' +
+    'Panagia Ekatontapiliani à Parikia, qui est une église traditionnelle belle ' +
+    'et l\'une des plus anciennes et plus grandes en Grèce.',
+    GR: 'Η Πάρος είνα ένα από τα νησιά του κεντρικού Αιγαίου, γνωστό στην ' +
+    'αρχαιότητα για το φίνο λευκό μάρμαρο που παρήγε. Το παλιό λιμάνι της Nάουσας ' +
+    'είναι ιδανικό για περίπατο, όπως και η παλιά πόλη της Παροικιάς, το άλλο ' +
+    'μεγάλο χωριό της Πάρου. Μπορείτε να επισκεφτείτε την Παναγία Εκατονταπυλιανή ' +
+    'στην Πάρο, μία από τις πιο καλοδιατηρημένες κι όμορφες εκκλησίες της Ελλάδας.',
   },
   parosbottom: {
-    EN: 'There are plenty of beaches in the island. We recommend Kolymbithres Beach that has crystal clear waters and sunbeds and umbrellas; Lageri beach is a more serene and remote option with (mostly) naked swimmers and no beach bars. We will be organising a day at the beach on Sunday after the wedding.',
-    FR: 'C\'est belle comme île.',
+    EN: 'There are plenty of beaches in the island. We recommend Kolymbithres ' +
+    'Beach that has crystal clear waters and sunbeds and umbrellas; Lageri ' +
+    'beach is a more serene and remote option with (mostly) naked swimmers and ' +
+    'no beach bars. We will be organising a day at the beach on Sunday after ' +
+    'the wedding.',
+    FR: 'Il y a beaucoup de plages sûr l\'île. Nous recommandons la plage ' +
+    'Kolymbithres quo a des eaux cristallines et des chaises longues et des '+
+    'parasols. Plage Lageri est plus sereine et éloignée avec (surtout) nageurs nus ' +
+    'et pas de bars de plage. On va organiser une journée sûr la plage le dimanche ' +
+    'après le mariage.',
+    GR: 'Υπάρχουν πολλές διαφορετικές παραλίες στο νησί. H παραλία Κολυμπήθρες έχει '+
+    'καθαρά νερά κι ομπρέλες με ξαπλώστρες, ενώ το Λαγκέρι είναι πιο ήσυχο κι '+
+    'απόμακρο χωρίς beach bars και κυρίως γυμνιστές λουόμενους. Θα οργανώσουμε ' +
+    'μια μέρα στην παραλία την Κυριακή μετά το γάμο.',
   },
   naxos: {
-    EN: 'Paros is only half an hour by boat from Naxos, the largest of the Cyclades islands. Naxos port is close to Portara, the Apollo Temple\'s entrance which is a great spot to watch the sunset.',
-    FR: 'C\'est belle comme île.',
+    EN: 'Paros is only half an hour by boat from Naxos, the largest of the ' +
+    'Cyclades islands. Naxos port is close to Portara, the Apollo Temple\'s ' +
+    'entrance which is a great spot to watch the sunset.',
+    FR: 'Paros est à seulement une demi-heure de Naxos, l\'île plus grande' +
+    'des Îles Cyclades. Le port de est près de Portara, l\'entrée du temple ' +
+    'Apollo qui est un endroit idéal pour regarder le coucher du soleil.',
+    GR: '',
   },
   antiparos: {
-    EN: 'Antiparos is a small island less than a mile away from Paros with a historical cavern and many sandy beaches.',
-    FR: 'C\'est belle comme île.',
+    EN: 'Antiparos is a small island less than a mile away from Paros with a ' +
+    'historical cavern and many sandy beaches.',
+    FR: 'Antiparos est une petite île à moins d\'un mile de Paros avec une ' +
+    'caverne historique et de nombreuses plages de sable fin.',
+    GR: 'Η Αντίπαρος είναι ένα μικρό νησάκι απέναντι από την Πάρο με ένα αρχαίο ' +
+    'σπήλαιο και πολλές αμμώδεις παραλιες.'
   },
   story: {
     EN: 'Quiz',
     FR: 'Notre histoire',
+    GR: 'Κουίζ',
   },
   travelInstructions: {
     EN: `
@@ -130,7 +197,56 @@ export default {
         </li>
       </ol>
     `,
-    FR: 'Debrouillez vous...',
+    FR: `
+      D\'Europe occidentale, il existe quatre options principales:
+      <br />
+      <br />
+      <ol>
+        <li>Volez à Athènes et puis volez à Paros. Aegean a des vols
+        3 fois par jour; vous pouvez utiliser
+          <a href="https://en.aegeanair.com/plan/low-fare-calendar/">
+           Aegean airlines calendar
+           </a> pour faciliter la recherche.
+        </li>
+        <li>Volez à Athènes et puis faites passer par bateau à Paros. Le port est
+          à 1h30min de l'aéroport par transport public et il y a des itinéraires
+          deux fois par jour. Vous pouvez réserver en ligne en utilisant
+          <a href="https://domestic-web.bluestarferries.com/default.aspx?lng=UK">
+            Blue Star Ferries
+          </a>
+        </li>
+        <li>Volez à Mykonos et puis faites passer par bateau à Paros. Il ya des
+        vols directs vers Mykonos et Paros est à 1 heure en bateau. Les bateaux
+        partent de Mykonos à Paros 5 fois par jour et vous pouvez réserver à
+          <a href="https://www.seajets.gr/en/Schedule-824.htm">Seajets</a> ou
+          <a href="https://hellenicseaways.gr/en/booking">Hellenic Seaways</a>.
+        </li>
+        <li>Volez à Santorini et puis faites passer par bateau à Paros. Il ya des
+        vols directs vers Santorini et Paros est à 2-4 heures en bateau. Les bateaux
+        partent de Santorini à Paros 2 fois par jour et vous pouvez réserver à
+          <a href="https://www.seajets.gr/en/Schedule-824.htm">Seajets</a> ou
+          <a href="https://hellenicseaways.gr/en/booking">Hellenic Seaways</a>.
+        </li>
+      </ol>
+    `,
+    GR: `
+      Από την Αθήνα, υπάρχουν δύο επιλογές:
+      <br />
+      <br />
+      <ol>
+        <li>Πτήση μέσω Aegean. Μπορείτε να ψάξετε και να κλείσετε μέσω
+          <a href="https://en.aegeanair.com/plan/low-fare-calendar/">
+           Aegean airlines calendar
+           </a>.
+        </li>
+        <li>Με πλοίο που φέυγει από τον Πειραιά δύο φορές τη μέρα.
+        Μπορείτε να κλείσετε μέσω
+          <a href="https://domestic-web.bluestarferries.com/default.aspx?lng=UK">
+            Blue Star Ferries
+          </a>
+        </li>
+      </ol>
+    `,
   },
   hotelInstructions: {
     EN: `
@@ -175,6 +291,90 @@ export default {
       So we recommend sticking to the Naoussa area even if you decide to
       book a different hotel.
     `,
-    FR: 'Debrouillez vous...',
+    FR: `
+      Nous avons organisé des offres spéciales avec les quatre hôtels ci-dessous
+      qui sont situés à Naoussa, et à distance de marche l'un de l'autre. Les
+      deux premières options (Madaki et Zoumis) sont juste à côté du vieux port,
+      à proximité de bons restaurants et magasins, tandis que les deux derniers
+      (Villa Irini et Kosmitis) sont un peu plus près de la plage. Vous pouver
+      nour contacter pour les prix et réserver avec eux directement (mentionnant
+      que vous êtes un invité du mariage de Despoina Magka).
+      <br />
+      <br />
+      <ol>
+        <li>Madaky Hotel, trouvez ici leur
+          <a href="http://www.madaki.gr/hotel/gr/contact.phps">
+          site Web </a> et leur <a href="http://www.booking.com/hotel/gr/madaky.en-gb.html">
+          booking.com page </a>. Pour réserver, veuillez appeler +30 22840 51475 ou
+          envoyer un email à info@madaki.gr
+        </li>
+        <li>Zoumis Studios, trouvez ici leur
+          <a href="http://www.zoumisstudios.com/">
+          site Web </a> et leur <a href="http://www.booking.com/hotel/gr/zoumis-paros.en-gb.html">
+          booking.com page </a>. Pour réserver, veuillez appeler +30 69472 32665 ou
+          envoyer un email à info@zoumisstudios.com.
+        </li>
+        <li>Villa Irini, trouvez ici leur
+          <a href="http://villairini.com/pages/en/contact.php">
+          site Web </a> et leur <a href="http://www.booking.com/hotel/gr/villa-irine.en-gb.html">
+          booking.com page </a>. Pour réserver, veuillez appeler +30 22840 51900 ou
+          envoyer un email à info@villairini.com
+        </li>
+        <li>Kosmitis, trouvez ici leur
+          <a href="https://www.paroshotel.com/paros-hotel.html">
+          site Web </a> et leur <a href="http://www.booking.com/hotel/gr/kosmitis.en-gb.html">
+          booking.com page </a>. Pour réserver, veuillez appeler +30 22840 52466 ou
+          envoyer un email à kosmitis@par.forthnet.gr
+        </li>
+      </ol>
+      S'il n'y a plus de disponibilité dans les hôtels ci-dessus ou si vous avez
+      des besoins spécifiques (par exemple, une chambre pour 4 personnes),
+      n'hésitez pas à nous demander d'autres recommandations ou consultez
+      booking.com pour d'autres options. Notez que nous organiserons le
+      transport entre Naoussa et Monastiri (la réception de mariage). Nous
+      recommandons donc de choisir un hotel près de Naoussa.
+    `,
+    GR: `
+      Έχουμε κανονίσει ειδικές τιμές με τα 4 παρακάτω ξενοδοχεία που βρίσκονται
+      στη Νάουσα και σε κοντινή απόσταση το ένα με το άλλο. Τα δύο πρώτα
+      (Μαντάκι και Zoumis) είναι δίπλα στο παλιό λιμάνι, ενώ τα δύο τελευταία
+      (Βίλλα Ειρήνη και Kosmitis) είναι πιο κοντά στην παραλία. Μπορείτε να
+      επικοινωνήσετε μαζί μας για τιμές και να κλείσετε απεθείας με τα ξενοδοχεία
+      (αναφέροντας ότι είστε καλεσμένοι για το γάμο της Δέσποινας Μάγκαι).
+      <br />
+      <br />
+      <ol>
+        <li>Μαντάκι, βρείτε εδώ την
+          <a href="http://www.madaki.gr/hotel/gr/contact.phps">
+          ιστοσελίδα τους </a> και <a href="http://www.booking.com/hotel/gr/madaky.en-gb.html">
+          τη σελίδα στο booking.com </a>. Για κρατήσεις, καλέστε στο +30 22840 51475 ή
+          στείλτε ένα email στοinfo@madaki.gr
+        </li>
+        <li>Zoumis Studios, trouvez ici leur
+          <a href="http://www.zoumisstudios.com/">
+          ιστοσελίδα τους </a> et leur <a href="http://www.booking.com/hotel/gr/zoumis-paros.en-gb.html">
+          τη σελίδα στο booking.com </a>. Για κρατήσεις, καλέστε στο +30 69472 32665 ή
+          στείλτε ένα email στοinfo@zoumisstudios.com.
+        </li>
+        <li>Villa Irini, trouvez ici leur
+          <a href="http://villairini.com/pages/en/contact.php">
+          ιστοσελίδα τους </a> et leur <a href="http://www.booking.com/hotel/gr/villa-irine.en-gb.html">
+          τη σελίδα στο booking.com </a>. Για κρατήσεις, καλέστε στο +30 22840 51900 ή
+          στείλτε ένα email στοinfo@villairini.com
+        </li>
+        <li>Kosmitis, trouvez ici leur
+          <a href="https://www.paroshotel.com/paros-hotel.html">
+          ιστοσελίδα τους </a> et leur <a href="http://www.booking.com/hotel/gr/kosmitis.en-gb.html">
+          τη σελίδα στο booking.com </a>. Για κρατήσεις, καλέστε στο +30 22840 52466 ή
+          στείλτε ένα email στο kosmitis@par.forthnet.gr
+        </li>
+      </ol>
+      Έαν η διαθεσιμότητα έχει εξαντληθεί στα παραπάνω ξενοδοχεία ή έχετε
+      ιδαίτερες ανάγκες (π.χ., δωμάτιο για 4 άτομα),
+      επικοινωνήστε μαζί μας ή ψάξτε στο booking.com για περαιτέρω επιλογές.
+      Θα οργανώσουμε μεταφορά ανάμεσα στη Νάουσα και το Μοναστήρι (όπου βρίσκεται
+      η εκκλησία και το κέντρο), επομένως σας συνιστούμε να διαλέξετε ένα ξενοδοχείο
+      στη Νάουσα.
+    `,
   },
 };
