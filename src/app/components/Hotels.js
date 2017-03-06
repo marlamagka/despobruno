@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-const swedenSelfie = '../../../images/stockholm.jpg';
+const santoriniSelfie = '../../../images/santorini_pic.jpg';
 
 
 class Hotels extends Component {
@@ -22,7 +22,7 @@ class Hotels extends Component {
           marginBottom: '30px',
         }}
       />
-      <img src={swedenSelfie} style={{ width: '50vw' }} />
+      <img src={santoriniSelfie} style={{ width: '50vw' }} />
     </div>);
   }
 }
