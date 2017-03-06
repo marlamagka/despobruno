@@ -12,12 +12,12 @@ export default {
   location: {
     EN: 'Paros, Greece',
     FR: 'Paros, Grèce',
-    FR: 'Πάρος, Κυκλάδες',
+    GR: 'Παρος, Κυκλαδες',
   },
   rsvpHeader: {
     EN: 'We\' love to have you with us!',
     FR: 'On vous attend de pied ferme!',
-    FR: 'Θα είναι ιδιαίτερη χαρά μας να σας έχουμε μαζί μας!',
+    GR: 'Θα χαρούμε να σας έχουμε μαζί μας!',
   },
   pleaseRsvp: {
     EN: 'Thanks for confirming your presence by filling in the form below:',
