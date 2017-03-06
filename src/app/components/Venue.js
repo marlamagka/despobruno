@@ -48,6 +48,11 @@ class Venue extends Component {
        />
     <br/>
     {copy.clothes} <br/>
+    <h1 className="h1-header">Gifts</h1>
+    <br/>
+    {copy.giftInstructions} <a href="https://www.paypal.me/despobruno">
+     www.paypal.me/despobruno
+     </a> <br/>
     <br/>
       <img src={oxfordSelfie} style={{
         width: '40vw',

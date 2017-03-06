@@ -49,6 +49,16 @@ export default {
     EN: 'Wedding',
     FR: 'Mariage',
   },
+  gifts: {
+    EN: 'Gifts',
+    FR: 'Cadeaux',
+  },
+  giftInstructions: {
+    EN: 'Your presence at the wedding in this remote destination is the most ' +
+    'generous of gifts, so there is no need for more! However, if you wish to, '+
+    'we will be grateful to accept contributions for our honeymoon at ',
+    FR: 'Cadeaux',
+  },
   attractions: {
     EN: 'Attractions',
     FR: 'Activités',
