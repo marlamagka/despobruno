@@ -92,7 +92,7 @@ export default {
   venueTitle: {
     EN: 'Ceremony and Reception',
     FR: 'Cérémonie et Réception',
-    FR: 'Τελετή και πάρτυ',
+    GR: 'Τελετή και πάρτυ',
   },
   ceremony: {
     EN: 'The ceremony will take place at 5:30pm outdoors in the yard of Agios ' +
