@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-const santoriniSelfie = '../../../images/santorini_pic.jpg';
+const swedenSelfie = '../../../images/santorini_pic.jpg';
 
 
 class Hotels extends Component {
@@ -11,7 +11,7 @@ class Hotels extends Component {
   }
   render() {
     return (<div style={{ textAlign: 'center' }} className="not-too-wide">
-      <h1 className="h1-header">Where do I stay in Paros?</h1>
+      <h1 className="h1-header">{this.props.copy.hotelTitle}</h1>
       <div
         dangerouslySetInnerHTML={{__html: this.props.copy.hotelInstructions}}
         style={{
@@ -22,7 +22,7 @@ class Hotels extends Component {
           marginBottom: '30px',
         }}
       />
-      <img src={santoriniSelfie} style={{ width: '50vw' }} />
+      <img src={swedenSelfie} style={{ width: '50vw' }} />
     </div>);
   }
 }

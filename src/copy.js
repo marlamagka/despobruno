@@ -26,7 +26,7 @@ export default {
   },
   belowRsvp: {
     EN: 'If you have already filled in this form but changed you mind, please email us:',
-    FR: 'Si vous avex déja rempli le questionaire et avez changé d\'avis, merci de nous ecrire:',
+    FR: 'Si vous avez déja rempli le questionaire et avez changé d\'avis, merci de nous ecrire:',
     GR: 'Εάν έχετε ήδη απαντήσει κι έχετε αλλάξει γνώμη, στείλτε μας email στο:',
   },
   home: {
@@ -36,7 +36,7 @@ export default {
   },
   rsvp: {
     EN: 'RSVP',
-    FR: 'Votre Présence',
+    FR: 'Présence',
     GR: 'RSVP',
   },
   travel: {
@@ -89,6 +89,11 @@ export default {
     'να φέρετε μια ζακέτα ή ένα σακάκι. Για περαιτέρω ιδέες γκουκλάρετε ' +
     '\'beach wedding dress code\'.',
   },
+  venueTitle: {
+    EN: 'Ceremony and Reception',
+    FR: 'Cérémonie et Réception',
+    FR: 'Τελετή και πάρτυ',
+  },
   ceremony: {
     EN: 'The ceremony will take place at 5:30pm outdoors in the yard of Agios ' +
     'Ioannis Detis, a small church by the sea.',
@@ -114,10 +119,10 @@ export default {
     'biggest in Greece. ',
     FR: 'Paros est une île grecque dans la mer Égée centrale, connu dans les ' +
     'temps anciens pour son beau marbre blanc. Le vieux port de Naoussa est ' +
-    'un havre pittoresque qui fait une agréable promenade. Parikia est l\'autre ' +
+    'un havre pittoresque qui offre une agréable promenade. Parikia est l\'autre ' +
     ' grand village de Paros avec une charmante vieille ville. Vous pouvez visiter ' +
-    'Panagia Ekatontapiliani à Parikia, qui est une église traditionnelle belle ' +
-    'et l\'une des plus anciennes et plus grandes en Grèce.',
+    'Panagia Ekatontapiliani à Parikia, qui est une belle église traditionnelle, ' +
+    'l\'une des plus anciennes et des plus grandes en Grèce.',
     GR: 'Η Πάρος είνα ένα από τα νησιά του κεντρικού Αιγαίου, γνωστό στην ' +
     'αρχαιότητα για το φίνο λευκό μάρμαρο που παρήγε. Το παλιό λιμάνι της Nάουσας ' +
     'είναι ιδανικό για περίπατο, όπως και η παλιά πόλη της Παροικιάς, το άλλο ' +
@@ -130,37 +135,52 @@ export default {
     'beach is a more serene and remote option with (mostly) naked swimmers and ' +
     'no beach bars. We will be organising a day at the beach on Sunday after ' +
     'the wedding.',
-    FR: 'Il y a beaucoup de plages sûr l\'île. Nous recommandons la plage ' +
-    'Kolymbithres quo a des eaux cristallines et des chaises longues et des '+
-    'parasols. Plage Lageri est plus sereine et éloignée avec (surtout) nageurs nus ' +
-    'et pas de bars de plage. On va organiser une journée sûr la plage le dimanche ' +
+    FR: 'Il y a beaucoup de plages sûr l\'île de Paros. Nous recommandons la plage ' +
+    'Kolymbithres qui a des eaux cristallines, des chaises longues et des '+
+    'parasols. La plage Lageri est plus sereine et éloignée avec (surtout) des nageurs nus, ' +
+    'et sans bars de plage. On organisera une journée sûr la plage le dimanche ' +
     'après le mariage.',
     GR: 'Υπάρχουν πολλές διαφορετικές παραλίες στο νησί. H παραλία Κολυμπήθρες έχει '+
     'καθαρά νερά κι ομπρέλες με ξαπλώστρες, ενώ το Λαγκέρι είναι πιο ήσυχο κι '+
     'απόμακρο χωρίς beach bars και κυρίως γυμνιστές λουόμενους. Θα οργανώσουμε ' +
     'μια μέρα στην παραλία την Κυριακή μετά το γάμο.',
   },
+  Paros: {
+    EN: 'Paros',
+    FR: 'Paros',
+    GR: 'Πάρος',
+  },
+  NearParos: {
+    EN: 'Nearby islands',
+    FR: 'Autres îles proches de Paros',
+    GR: 'Νησιά σε κοντινή απόσταση',
+  },
   naxos: {
     EN: 'Paros is only half an hour by boat from Naxos, the largest of the ' +
     'Cyclades islands. Naxos port is close to Portara, the Apollo Temple\'s ' +
     'entrance which is a great spot to watch the sunset.',
-    FR: 'Paros est à seulement une demi-heure de Naxos, l\'île plus grande' +
-    'des Îles Cyclades. Le port de est près de Portara, l\'entrée du temple ' +
+    FR: 'Paros est à seulement une demi-heure de Naxos, la plus grande île ' +
+    'des Cyclades. Le port est près de Portara, l\'entrée du temple ' +
     'Apollo qui est un endroit idéal pour regarder le coucher du soleil.',
     GR: '',
   },
   antiparos: {
     EN: 'Antiparos is a small island less than a mile away from Paros with a ' +
     'historical cavern and many sandy beaches.',
-    FR: 'Antiparos est une petite île à moins d\'un mile de Paros avec une ' +
+    FR: 'Antiparos est une petite île très proche de Paros, avec une ' +
     'caverne historique et de nombreuses plages de sable fin.',
     GR: 'Η Αντίπαρος είναι ένα μικρό νησάκι απέναντι από την Πάρο με ένα αρχαίο ' +
     'σπήλαιο και πολλές αμμώδεις παραλιες.'
   },
   story: {
     EN: 'Quiz',
-    FR: 'Notre histoire',
+    FR: 'Quiz',
     GR: 'Κουίζ',
+  },
+  travelTitle: {
+    EN: 'How do I get to Paros?',
+    FR: 'Comment venir à Paros?',
+    GR: 'Πώς θα πάω στην Πάρο;',
   },
   travelInstructions: {
     EN: `
@@ -247,6 +267,11 @@ export default {
         </li>
       </ol>
     `,
+  },
+  hotelTitle: {
+    EN: 'Where do I stay in Paros?',
+    FR: 'Où rester à Paros?',
+    GR: 'Διαμονή στην Πάρο;',
   },
   hotelInstructions: {
     EN: `

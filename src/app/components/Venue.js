@@ -11,7 +11,7 @@ class Venue extends Component {
   render() {
     const copy = this.props.copy;
     return (<div style={{ textAlign: 'center' }} className="not-too-wide">
-    <h1 className="h1-header">Ceremony and Reception</h1>
+    <h1 className="h1-header">{copy.venueTitle}</h1>
     {copy.ceremony} <br/>
       <iframe
        src={'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3180.31239817' +
@@ -48,7 +48,7 @@ class Venue extends Component {
        />
     <br/>
     {copy.clothes} <br/>
-    <h1 className="h1-header">Gifts</h1>
+    <h1 className="h1-header">{copy.gifts}</h1>
     <br/>
     {copy.giftInstructions} <a href="https://www.paypal.me/despobruno">
      www.paypal.me/despobruno

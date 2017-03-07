@@ -14,7 +14,7 @@ class Attractions extends Component {
   render() {
     const copy = this.props.copy;
     return (<div style={{ textAlign: 'center' }} className="not-too-wide">
-    <h1 className="h1-header">Paros</h1>
+    <h1 className="h1-header">{copy.Paros}</h1>
       {copy.parostop} <br/>
       <img src={church} style={{
         width: '40vw',
@@ -30,7 +30,7 @@ class Attractions extends Component {
         marginBottom: '20px',
       }} />
     <br/>
-    <h1 className="h1-header">Nearby islands</h1>
+    <h1 className="h1-header">{copy.NearParos}</h1>
       {copy.naxos} <br/>
       <img src={naxos} style={{
         width: '40vw',
