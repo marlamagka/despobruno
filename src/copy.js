@@ -15,7 +15,7 @@ export default {
     GR: 'Παρος, Κυκλαδες',
   },
   rsvpHeader: {
-    EN: 'We\' love to have you with us!',
+    EN: 'We\'d love to have you with us!',
     FR: 'On vous attend de pied ferme!',
     GR: 'Θα χαρούμε να σας έχουμε μαζί μας!',
   },
@@ -26,7 +26,7 @@ export default {
   },
   belowRsvp: {
     EN: 'If you have already filled in this form but changed you mind, please email us:',
-    FR: 'Si vous avez déja rempli le questionaire et avez changé d\'avis, merci de nous ecrire:',
+    FR: 'Si vous avez déja rempli le questionaire et avez changé d\'avis, merci de nous ecrire à:',
     GR: 'Εάν έχετε ήδη απαντήσει κι έχετε αλλάξει γνώμη, στείλτε μας email στο:',
   },
   home: {
@@ -64,11 +64,11 @@ export default {
     'generous of gifts, so there is no need for more! However, if you wish to, '+
     'we will be grateful to accept contributions for our honeymoon at ',
     FR: 'Votre présence dans notre mariage tellement lointain est très généreuse ' +
-    'comme cadeau, alor ça suffit! Neanmoins, si vous souhaitez, nous serons '+
+    'comme cadeau, alors ça suffit! Neanmoins, si vous souhaitez, nous serons '+
     'reconnaissants d´accepter contributions sûr notre voyage de noces à ',
     GR: 'Η παρουσία σας στο γάμο σε ένα τόσο μακρινό προορισμό είναι το πιο πολύτιμο ' +
     'δώρο που μπορείτε να μας κάνετε! Ωστόσο, εάν επιθυμείτε να συνεισφέρετε περαιτέρω '+
-    'θα είμαστε ευγνώμονες να δεχτούμε χρηματική βοήθεια για το μήνα του μέλιτος στο ',
+    'μπορείτε να μας βοήθησετε χρηματικά για το μήνα του μέλιτος στο ',
   },
   attractions: {
     EN: 'Attractions',
@@ -81,11 +81,11 @@ export default {
     'or jacket. For those with lack of inspiration, google for \'beach wedding ' +
     'dress code\'.',
     FR: 'Il n\'y a aucun code vestimentaire. Cependant, Juin sera assez chaud ' +
-    'pendand le soir et plus froid pendant la nuit, alors assurez-vous d\' ' +
+    'pendant le soir et plus froid pendant la nuit, alors assurez-vous d\' ' +
     'apporter un cardigan ou une veste. Si vous manquez d\'inspiration, googlez ' +
     'pour \'beach wedding dress code\'.',
-    GR: 'Δεν υπάρχει κανένας ενδυματολογικός κώδικας. Είναι πιθανό ότι θα κάνει ' +
-    'ζέστη κατά τη διάρκεια της ημέρας και κρύο τη νύχτα, επομένων σιγουρευτείτε ' +
+    GR: 'Δεν υπάρχει ενδυματολογικός κώδικας! Αλλά είναι πιθανό ότι θα κάνει ' +
+    'ζέστη το απόγευμα στην εκκλησία και κρύο τη νύχτα, επομένως σιγουρευτείτε ' +
     'να φέρετε μια ζακέτα ή ένα σακάκι. Για περαιτέρω ιδέες γκουκλάρετε ' +
     '\'beach wedding dress code\'.',
   },
@@ -100,7 +100,7 @@ export default {
     FR: 'La cérémonie aura lieu à 17h30 dehors sûr la cour de St.John ' +
     'Detis, une petite église près de la mer.',
     GR: 'Η τελετή θα λάβει μέρος στις 5:30 το απόγευμα στην αυλή του Άγιου Ιωάννη' +
-    'Δέτη δίπλα στη θάλασσα.',
+    ' Δέτη δίπλα στη θάλασσα.',
   },
   reception: {
     EN: 'The reception will be held in the stonebuilt venue by Monastiri beach, ' +
@@ -142,7 +142,7 @@ export default {
     'après le mariage.',
     GR: 'Υπάρχουν πολλές διαφορετικές παραλίες στο νησί. H παραλία Κολυμπήθρες έχει '+
     'καθαρά νερά κι ομπρέλες με ξαπλώστρες, ενώ το Λαγκέρι είναι πιο ήσυχο κι '+
-    'απόμακρο χωρίς beach bars και κυρίως γυμνιστές λουόμενους. Θα οργανώσουμε ' +
+    'απόμακρο χωρίς καταστήματα και (κυρίως) γυμνιστές λουόμενους. Θα οργανώσουμε ' +
     'μια μέρα στην παραλία την Κυριακή μετά το γάμο.',
   },
   Paros: {
@@ -162,7 +162,9 @@ export default {
     FR: 'Paros est à seulement une demi-heure de Naxos, la plus grande île ' +
     'des Cyclades. Le port est près de Portara, l\'entrée du temple ' +
     'Apollo qui est un endroit idéal pour regarder le coucher du soleil.',
-    GR: '',
+    GR: 'Η Πάρος απέχει μόλις μισή ώρα με το πλοίο από τη Νάξο, το μεγαλύτερο ' +
+    'από τα κυκλαδίτικα νησιά. Το λιμάνι της Νάξου είναι κοντά στην Πορτάρα, ' +
+    'όπου η είσοδος του ναού του Απόλλωνα είναι ιδανική για το ηλιοβασίλεμα.',
   },
   antiparos: {
     EN: 'Antiparos is a small island less than a mile away from Paros with a ' +
@@ -194,12 +196,12 @@ export default {
            Aegean airlines calendar
            </a> for easier search.
         </li>
-        <li>Fly to Athens and then ferry to Paros. The port is 1h30min away
+        <li>Fly to Athens and then ferry to Paros. Piraeus port is 1h30min away
           from the airport with public transport and there are itineraries
           twice per day. You can book online using
           <a href="https://domestic-web.bluestarferries.com/default.aspx?lng=UK">
             Blue Star Ferries
-          </a>
+          </a> There are up to 3 boats per day to Paros from Rafina port as well.
         </li>
         <li>Fly to Mykonos and then ferry to Paros. There are direct flights to
           Mykonos and Paros is 1 hour away by boat.
@@ -228,20 +230,20 @@ export default {
            Aegean airlines calendar
            </a> pour faciliter la recherche.
         </li>
-        <li>Volez à Athènes et puis faites passer par bateau à Paros. Le port est
+        <li>Volez à Athènes et puis faites passer par bateau à Paros. Le port Pirée est
           à 1h30min de l'aéroport par transport public et il y a des itinéraires
           deux fois par jour. Vous pouvez réserver en ligne en utilisant
           <a href="https://domestic-web.bluestarferries.com/default.aspx?lng=UK">
             Blue Star Ferries
-          </a>
+          </a> Il y a aussi des bateaux jusqu'à 3 fois par jour à Paros du port Rafina.
         </li>
-        <li>Volez à Mykonos et puis faites passer par bateau à Paros. Il ya des
+        <li>Volez à Mykonos et puis faites passer par bateau à Paros. Il y a des
         vols directs vers Mykonos et Paros est à 1 heure en bateau. Les bateaux
         partent de Mykonos à Paros 5 fois par jour et vous pouvez réserver à
           <a href="https://www.seajets.gr/en/Schedule-824.htm">Seajets</a> ou
           <a href="https://hellenicseaways.gr/en/booking">Hellenic Seaways</a>.
         </li>
-        <li>Volez à Santorini et puis faites passer par bateau à Paros. Il ya des
+        <li>Volez à Santorini et puis faites passer par bateau à Paros. Il y a des
         vols directs vers Santorini et Paros est à 2-4 heures en bateau. Les bateaux
         partent de Santorini à Paros 2 fois par jour et vous pouvez réserver à
           <a href="https://www.seajets.gr/en/Schedule-824.htm">Seajets</a> ou
@@ -250,7 +252,7 @@ export default {
       </ol>
     `,
     GR: `
-      Από την Αθήνα, υπάρχουν δύο επιλογές:
+      Από την Αθήνα, υπάρχουν τρεις επιλογές:
       <br />
       <br />
       <ol>
@@ -265,13 +267,19 @@ export default {
             Blue Star Ferries
           </a>
         </li>
+        <li>Με πλοίο που φέυγει από Ραφήνα μέχρι και τρεις φορές τη μέρα.
+        Μπορείτε να κλείσετε μέσω
+          <a href="https://www.ferryhopper.com/">
+            αυτής της σελίδας.
+          </a>
+        </li>
       </ol>
     `,
   },
   hotelTitle: {
     EN: 'Where do I stay in Paros?',
     FR: 'Où rester à Paros?',
-    GR: 'Διαμονή στην Πάρο;',
+    GR: 'Διαμονή στην Πάρο',
   },
   hotelInstructions: {
     EN: `
@@ -365,32 +373,32 @@ export default {
       (Μαντάκι και Zoumis) είναι δίπλα στο παλιό λιμάνι, ενώ τα δύο τελευταία
       (Βίλλα Ειρήνη και Kosmitis) είναι πιο κοντά στην παραλία. Μπορείτε να
       επικοινωνήσετε μαζί μας για τιμές και να κλείσετε απεθείας με τα ξενοδοχεία
-      (αναφέροντας ότι είστε καλεσμένοι για το γάμο της Δέσποινας Μάγκαι).
+      (αναφέροντας ότι είστε καλεσμένοι για το γάμο της Δέσποινας Μάγκα).
       <br />
       <br />
       <ol>
         <li>Μαντάκι, βρείτε εδώ την
           <a href="http://www.madaki.gr/hotel/gr/contact.phps">
-          ιστοσελίδα τους </a> και <a href="http://www.booking.com/hotel/gr/madaky.en-gb.html">
-          τη σελίδα στο booking.com </a>. Για κρατήσεις, καλέστε στο +30 22840 51475 ή
-          στείλτε ένα email στοinfo@madaki.gr
+          ιστοσελίδα τους </a> και τη σελίδα στο <a href="http://www.booking.com/hotel/gr/madaky.en-gb.html">
+           booking.com </a>. Για κρατήσεις, καλέστε στο +30 22840 51475 ή
+          στείλτε ένα email στο info@madaki.gr
         </li>
-        <li>Zoumis Studios, trouvez ici leur
+        <li>Zoumis Studios, βρείτε εδώ την
           <a href="http://www.zoumisstudios.com/">
-          ιστοσελίδα τους </a> et leur <a href="http://www.booking.com/hotel/gr/zoumis-paros.en-gb.html">
-          τη σελίδα στο booking.com </a>. Για κρατήσεις, καλέστε στο +30 69472 32665 ή
-          στείλτε ένα email στοinfo@zoumisstudios.com.
+          ιστοσελίδα τους </a> και τη σελίδα στο <a href="http://www.booking.com/hotel/gr/zoumis-paros.en-gb.html">
+          booking.com </a>. Για κρατήσεις, καλέστε στο +30 69472 32665 ή
+          στείλτε ένα email στο info@zoumisstudios.com.
         </li>
-        <li>Villa Irini, trouvez ici leur
+        <li>Villa Irini, βρείτε εδώ την
           <a href="http://villairini.com/pages/en/contact.php">
-          ιστοσελίδα τους </a> et leur <a href="http://www.booking.com/hotel/gr/villa-irine.en-gb.html">
+          ιστοσελίδα τους </a> και τη σελίδα στο <a href="http://www.booking.com/hotel/gr/villa-irine.en-gb.html">
           τη σελίδα στο booking.com </a>. Για κρατήσεις, καλέστε στο +30 22840 51900 ή
-          στείλτε ένα email στοinfo@villairini.com
+          στείλτε ένα email στο info@villairini.com
         </li>
-        <li>Kosmitis, trouvez ici leur
+        <li>Kosmitis, βρείτε εδώ την
           <a href="https://www.paroshotel.com/paros-hotel.html">
-          ιστοσελίδα τους </a> et leur <a href="http://www.booking.com/hotel/gr/kosmitis.en-gb.html">
-          τη σελίδα στο booking.com </a>. Για κρατήσεις, καλέστε στο +30 22840 52466 ή
+          ιστοσελίδα τους </a> και τη σελίδα στο <a href="http://www.booking.com/hotel/gr/kosmitis.en-gb.html">
+           booking.com </a>. Για κρατήσεις, καλέστε στο +30 22840 52466 ή
           στείλτε ένα email στο kosmitis@par.forthnet.gr
         </li>
       </ol>

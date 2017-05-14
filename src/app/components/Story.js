@@ -84,7 +84,7 @@ const storyData = [{
   picture: myPic,
   year: 2016,
 }, {
-  question: 'Guess who was baptised by "playful" Nikos in 2017?',
+  question: 'Guess who was baptised by Nikos in 2017?',
   who: 'Bruno',
   story: 'Bruno was christened Greek orthodox assuming his (fourth) name Socrates.',
   picture: myPic,
