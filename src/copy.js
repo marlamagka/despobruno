@@ -63,9 +63,9 @@ export default {
     EN: 'Your presence at our wedding in this remote destination is the most ' +
     'generous of gifts, so there is no need for more! However, if you wish to, '+
     'we will be grateful to accept contributions for our honeymoon at ',
-    FR: 'Votre présence dans notre mariage tellement lointain est très généreuse ' +
-    'comme cadeau, alors ça suffit! Neanmoins, si vous souhaitez, nous serons '+
-    'reconnaissants d\'accepter contributions sûr notre voyage de noces à ',
+    FR: 'Votre présence à notre mariage si lointain est suffisament généreuse ' +
+    'comme cadeau! Neanmoins, si vous le souhaitez, nous serons '+
+    'reconnaissants d\'accepter une contribution pour notre voyage de noces à ',
     GR: 'Η παρουσία σας στο γάμο σε ένα τόσο μακρινό προορισμό είναι το πιο πολύτιμο ' +
     'δώρο που μπορείτε να μας κάνετε! Ωστόσο, εάν επιθυμείτε να συνεισφέρετε περαιτέρω '+
     'μπορείτε να μας βοήθησετε χρηματικά για το μήνα του μέλιτος στο ',
