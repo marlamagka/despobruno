@@ -65,10 +65,22 @@ export default {
     'we will be grateful to accept contributions for our honeymoon at ',
     FR: 'Votre présence dans notre mariage tellement lointain est très généreuse ' +
     'comme cadeau, alors ça suffit! Neanmoins, si vous souhaitez, nous serons '+
-    'reconnaissants d´accepter contributions sûr notre voyage de noces à ',
+    'reconnaissants d\'accepter contributions sûr notre voyage de noces à ',
     GR: 'Η παρουσία σας στο γάμο σε ένα τόσο μακρινό προορισμό είναι το πιο πολύτιμο ' +
     'δώρο που μπορείτε να μας κάνετε! Ωστόσο, εάν επιθυμείτε να συνεισφέρετε περαιτέρω '+
     'μπορείτε να μας βοήθησετε χρηματικά για το μήνα του μέλιτος στο ',
+  },
+  weddingInstructions: {
+    EN: 'For further info related to the wedding, you can contact us ' +
+    '(despo-and-bruno@googlegroups.com, 00306978240925) or our wonderful ' +
+    'planner Georgia (georgia@weddingparos.com, 00306979604732).',
+    FR: 'Pour plus d\'informations liées au mariage, vous pouvez nous  ' +
+    'contacter (despo-and-bruno@googlegroups.com, 00306978240925) ou notre '+
+    'organisatrice formidable Georgia '+
+    '(georgia@weddingparos.com, 00306979604732).',
+    GR: 'Για περαιτέρω πληροφορίες σχετικά με το γάμο, μπορείτε να ' +
+    'απευθυνθείτε σε εμάς (despo-and-bruno@googlegroups.com, 00306978240925)  '+
+    'ή στη φανταστική Γεωργία, (georgia@weddingparos.com, 00306979604732). ',
   },
   attractions: {
     EN: 'Attractions',
@@ -117,7 +129,7 @@ export default {
     'Paros with a charming old town. You can visit Panagia Ekatontapiliani in ' +
     'Parikia, which is a traditional beautiful church and one of the oldest and ' +
     'biggest in Greece. ',
-    FR: 'Paros est une île grecque dans la mer Égée centrale, connu dans les ' +
+    FR: 'Paros est une île grecque dans la mer Égée centrale, connue dans les ' +
     'temps anciens pour son beau marbre blanc. Le vieux port de Naoussa est ' +
     'un havre pittoresque qui offre une agréable promenade. Parikia est l\'autre ' +
     ' grand village de Paros avec une charmante vieille ville. Vous pouvez visiter ' +

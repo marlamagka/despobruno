@@ -47,7 +47,7 @@ class Venue extends Component {
         allowfullscreen
        />
     <br/>
-    {copy.clothes} <br/>
+    {copy.clothes} {copy.weddingInstructions} <br/>
     <h1 className="h1-header">{copy.gifts}</h1>
     <br/>
     {copy.giftInstructions} <a href="https://www.paypal.me/despobruno">
